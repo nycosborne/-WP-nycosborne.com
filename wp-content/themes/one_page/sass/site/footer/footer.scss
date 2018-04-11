@@ -1,0 +1,36 @@
+.site-footer{
+  position: fixed;
+  width: 100%;
+  z-index: 90;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background-color: #afacaa;
+  padding-top: 10px;
+  color: #fff;
+}
+
+.footer-by-line {
+  float: left;
+}
+.footer-menu{
+  ul{
+    display: inline-block;
+    list-style-type: none;
+    justify-content: space-around;
+    li{
+      display: inline-block;
+    }
+    a {
+      color: #fff;
+      display: inline;
+      padding: 1em;
+    }
+    a:visited{
+      color: #fff;
+    }
+  }
+
+}

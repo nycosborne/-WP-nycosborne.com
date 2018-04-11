@@ -1,0 +1,60 @@
+body{
+  background-color: #ededed;
+}
+
+.site{
+
+}
+.site-header{
+	position: relative;
+}
+.site-content{
+	position: block;
+	background-color: #ededed;
+	height: 100%;
+}
+
+.content-area {
+	display: inline-block;
+
+ background-color: rgba(0, 0, 0, 0.0);
+
+}
+
+.content-area a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.site-footer{
+
+}
+
+.sticky {
+	display: block;
+}
+
+// .hentry {
+// 	margin: 5em;
+// }
+
+.updated:not(.published) {
+	display: none;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 0 0 0;
+}
+
+.page-links {
+	clear: both;
+	margin: 0 0 1.5em;
+}
+
+
+
+article{
+	padding:20px 10%;
+}

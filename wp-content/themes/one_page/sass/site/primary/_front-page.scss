@@ -1,0 +1,120 @@
+
+.landing-page .entry-content{
+	position: relative;
+	padding: 10px;
+	width: 100%;
+}
+
+.about-me{
+	padding: 50px;
+  color: #fff;
+  color: hsl(0, 0%, 100%);
+  background: #c3814b;
+
+  padding: 1rem 0;
+	display: flex;
+	justify-content: space-around;
+	img {
+
+		}
+	.entry-content-excerpt{
+		height: 35%;
+		width: 35%;
+		padding: 25px;
+		// @media screen and (max-width: $query__small ) {
+		//
+	  //   display: none;
+	  // }
+	}
+}
+
+
+
+.experience{
+  padding: 1rem 0;
+  background: #dfbe6f;
+	.experience-title{
+		font-size: 2em;
+		width: 100%;
+		text-align: center;
+		a {
+			color: #051923;
+		}
+	}
+	.download-icon{
+		padding-left: 55px;
+	}
+}
+
+.mobile-project{
+	display: block;
+	text-align: center;
+  padding: 15px;
+  color: #fff;
+  background: #dbad67;
+	ul {
+		    margin-left: 0;
+	}
+	.mobile-project-list-dev{
+		display: flex;
+		justify-content: space-around;
+	}
+	.mobile-project-list{
+
+	}
+	.mobile-project-li{
+		display: inline-block;
+		padding: 25px 10px;
+		width: 200px;
+	}
+	.project-title{
+		font-size: 2em;
+		width: 100%;
+		text-align: center;
+	}
+}
+.contact-me{
+  padding: 1em;
+  background: #ffdb84;
+	justify-content: center;
+	.contact-me-title{
+		font-size: 2em;
+		// color: #BFBFBF;
+		width: 100%;
+		text-align: center;
+			a {
+				color: #051923;
+			}
+	}
+	input{
+		width: 60%;
+	}
+	.wpcf7-submit{
+		width: 60px;
+	}
+	.entry-content{
+
+
+	}
+}
+
+
+.web-project{
+	width: 100%;
+	background: #edca76;
+	display: flex;
+	justify-content: center;
+	.web-projects-title{
+		font-size: 2em;
+		width: 100%;
+		text-align: center;
+		a {
+			color: #051923;
+		}
+	}
+}
+.thubnail{
+	// padding: 0px;
+	// max-height: 50px;
+	// max-width: 50px;
+}
