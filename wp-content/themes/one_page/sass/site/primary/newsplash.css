@@ -6,7 +6,7 @@ body{
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   background-color: #ededed;
 
 }
@@ -31,12 +31,7 @@ body{
   border-width: 5px;
   border-color: #bcbcbc;
 }
-@media (min-width:600px) {
-  .landing-page{
-    flex-direction: row;
-  }
 
-}
 
 @media (min-width:1450px) {
   .pages-list{

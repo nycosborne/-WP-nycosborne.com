@@ -1244,12 +1244,25 @@ div.menu-menu-1-container li:hover a {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
+@media (min-width: 600px) {
+	.site-footer {
+		position: fixed;
+		width: 100%;
+		z-index: 90;
+		bottom: 0;
+		left: 0;
+		display: -ms-flexbox;
+		display: flex;
+		-ms-flex-pack: center;
+		    justify-content: center;
+		text-align: center;
+		background-color: #afacaa;
+		padding-top: 10px;
+		color: #fff;
+	}
+}
+
 .site-footer {
-	position: fixed;
-	width: 100%;
-	z-index: 90;
-	bottom: 0;
-	left: 0;
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: center;
@@ -1433,8 +1446,8 @@ body {
 	    align-items: center;
 	-ms-flex-wrap: wrap;
 	    flex-wrap: wrap;
-	-ms-flex-direction: column;
-	    flex-direction: column;
+	-ms-flex-direction: row;
+	    flex-direction: row;
 	background-color: #ededed;
 }
 
@@ -1458,13 +1471,6 @@ body {
 	border-style: solid;
 	border-width: 5px;
 	border-color: #bcbcbc;
-}
-
-@media (min-width: 600px) {
-	.landing-page {
-		-ms-flex-direction: row;
-		    flex-direction: row;
-	}
 }
 
 @media (min-width: 1450px) {
