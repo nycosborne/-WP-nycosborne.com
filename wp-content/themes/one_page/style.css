@@ -1035,6 +1035,7 @@ body {
 .content-area {
 	display: inline-block;
 	background-color: transparent;
+	padding-bottom: 120px;
 }
 
 .content-area a {
@@ -1257,7 +1258,6 @@ div.menu-menu-1-container li:hover a {
 		    justify-content: center;
 		text-align: center;
 		background-color: #afacaa;
-		padding-top: 10px;
 		color: #fff;
 	}
 }
@@ -1461,16 +1461,23 @@ body {
 }
 
 .excerpt-holder {
-	max-width: 250px;
+	max-width: 450px;
 }
 
 .pages-list {
-	margin: 50px;
+	margin: 5px 5px;
 	padding: 15px;
 	background-color: #c1c1c1;
 	border-style: solid;
 	border-width: 5px;
 	border-color: #bcbcbc;
+}
+
+@media (min-width: 600px) {
+	.pages-list {
+		margin: 10px;
+		padding: 15px;
+	}
 }
 
 @media (min-width: 1450px) {
