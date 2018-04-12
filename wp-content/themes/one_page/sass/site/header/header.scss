@@ -133,6 +133,13 @@ figure{
 
 div.menu-menu-1-container{
   display: none;
+  li:hover{
+    background-color: #d1cfce;
+
+    a{
+      color: #594e46;
+    }
+  }
 }
 #toggle-menu {
   display: none;
@@ -197,7 +204,13 @@ div.menu-menu-1-container{
      display: block;
      position: relative;
 
-    // background-color: inherit;
+    li:hover{
+      background-color: #d1cfce;
+
+      a{
+        color: #594e46;
+      }
+    }
   }
 
 }

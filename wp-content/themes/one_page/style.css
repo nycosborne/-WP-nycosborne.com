@@ -1178,6 +1178,14 @@ div.menu-menu-1-container {
 	display: none;
 }
 
+div.menu-menu-1-container li:hover {
+	background-color: #d1cfce;
+}
+
+div.menu-menu-1-container li:hover a {
+	color: #594e46;
+}
+
 #toggle-menu {
 	display: none;
 }
@@ -1224,6 +1232,12 @@ div.menu-menu-1-container {
 	div.menu-menu-1-container {
 		display: block;
 		position: relative;
+	}
+	div.menu-menu-1-container li:hover {
+		background-color: #d1cfce;
+	}
+	div.menu-menu-1-container li:hover a {
+		color: #594e46;
 	}
 }
 
