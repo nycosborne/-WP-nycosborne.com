@@ -1518,4 +1518,10 @@ body {
 	background: white;
 }
 
+.blog hr {
+	display: block;
+	margin: 1em 0;
+	padding: 0;
+}
+
 /*# sourceMappingURL=../one_page/sass/maps/style.css.map */
