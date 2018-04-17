@@ -1506,6 +1506,17 @@ body {
 	background: white;
 }
 
+.blog .site-main {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+.blog .blog-post-area {
+	background-color: white;
+}
+
 .blog a {
 	color: black;
 }

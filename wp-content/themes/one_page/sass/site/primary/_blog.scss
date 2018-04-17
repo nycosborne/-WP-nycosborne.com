@@ -1,5 +1,13 @@
 .blog{
   color: black;
+
+  .site-main{
+    display: flex;
+    justify-content: space-between;
+  }
+  .blog-post-area{
+    background-color: white;
+  }
   a {
     color: black;
   }
@@ -15,6 +23,6 @@
     display: block;
     margin: 1em 0;
     padding: 0;
-}
+  }
 
 }
