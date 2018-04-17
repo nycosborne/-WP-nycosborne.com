@@ -33,6 +33,7 @@ get_header();
 
 						while ($parent_only_query->have_posts()) {
 							$parent_only_query->the_post();
+							if (get_the_title() != 'Home') {
 							echo '<div class="pages-list">';
 							?><div class="title-holder"><?php
 							echo get_the_title();
@@ -45,21 +46,17 @@ get_header();
 								</div>
 								<?php
 							}else {
-								?> <div class="excerpt-holder"> <a href='<?php  echo get_permalink() ?>' <?php
+								?> <div class="excerpt-holder"> <a href='<?php  echo get_permalink() ?>'
+							 <?php
 								the_excerpt();
 								?> </div> </a> <?php
 							}
-
-							echo '</div>';
-
+								echo '</div>';
 						}
-
-
-				}
+						wp_reset_postdata();
+					}
+			}
 				?>
-
-
-
 			</div> <!--end .landing-page -->
 		</main><!-- #main -->
 	</div><!-- #primary -->

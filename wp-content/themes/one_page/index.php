@@ -22,6 +22,7 @@ get_header();
 		if ( have_posts() ) :
 
 			if ( is_home() && ! is_front_page() ) :
+
 				?>
 				<header>
 					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
@@ -55,4 +56,6 @@ get_header();
 	</div><!-- #primary -->
 
 <?php
-get_footer();
+// get_footer();
+// replaced get_footer() on index to removed footer but keep scripts and admin header
+wp_footer();
