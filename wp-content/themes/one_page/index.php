@@ -54,7 +54,9 @@ get_header();
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
-
+<?php
+	get_sidebar();
+ ?>
 <?php
 // get_footer();
 // replaced get_footer() on index to removed footer but keep scripts and admin header
