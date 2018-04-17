@@ -56,4 +56,6 @@
 	<footer class="entry-footer">
 		<?php one_page_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
+	 <!-- adding <hr> for line between artices -->
+	<hr class="artile-line"/>
 </article><!-- #post-<?php the_ID(); ?> -->

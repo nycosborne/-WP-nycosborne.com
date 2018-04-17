@@ -1498,4 +1498,24 @@ body {
 	}
 }
 
+/*--------------------------------------------------------------
+## blog
+--------------------------------------------------------------*/
+.blog {
+	color: black;
+	background: white;
+}
+
+.blog a {
+	color: black;
+}
+
+.blog a:hover {
+	color: gray;
+}
+
+.blog .site-content {
+	background: white;
+}
+
 /*# sourceMappingURL=../one_page/sass/maps/style.css.map */
