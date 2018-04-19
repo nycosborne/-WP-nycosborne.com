@@ -2,6 +2,9 @@
   color: black;
 
   .site-main{
+
+  }
+  .blog-body{
     display: flex;
     justify-content: space-between;
   }
@@ -9,10 +12,25 @@
     background-color: white;
   }
   .sticky{
-    background-color: gray;
     display: none;
   }
-  #blog-sidebar
+  .sticky-title{
+    padding-top: 3em;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    background-color: white;
+
+  }
+  .sticky-title-img{
+    position: relative;
+    color: white;
+    bottom: 3em;
+    right: 3em;
+    margin-left: 2em;
+    font-size: 1.5em;
+  }
+  #blog-sidebar{
     float: left;
     padding-right: 1em;
     h2{

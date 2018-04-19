@@ -1506,7 +1506,7 @@ body {
 	background: white;
 }
 
-.blog .site-main {
+.blog .blog-body {
 	display: -ms-flexbox;
 	display: flex;
 	-ms-flex-pack: justify;
@@ -1518,11 +1518,28 @@ body {
 }
 
 .blog .sticky {
-	background-color: gray;
 	display: none;
 }
 
+.blog .sticky-title {
+	padding-top: 3em;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	background-color: white;
+}
+
+.blog .sticky-title-img {
+	position: relative;
+	color: white;
+	bottom: 3em;
+	right: 3em;
+	margin-left: 2em;
+	font-size: 1.5em;
+}
+
 .blog #blog-sidebar {
+	float: left;
 	padding-right: 1em;
 }
 

@@ -19,9 +19,40 @@ get_header();
 		<main id="main" class="site-main">
 
 			<?php
+			$sticky = get_option( 'sticky_posts' );
+			rsort( $sticky );
+			$sticky = array_slice( $sticky, 0, 5 );
+			$the_query = new WP_Query( array( 'post__in' => $sticky, 'ignore_sticky_posts' => 1 ) );
+				if ( $the_query->have_posts() ) :
+					while ( $the_query->have_posts() ) :
+						 $the_query->the_post();
+						 ?>
+
+						<!-- <a href="	 http://192.168.1.8:8890/one_page/2018/04/17/looking-forward-to-the-react-x-node-april-meetup/   "> -->
+						<a href="<?php echo get_permalink(); ?>">
+						 	<div class="sticky-title">
+						<?php
+						 echo get_the_post_thumbnail();
+						 ?>
+						 		<div class="sticky-title-img">
+									<?php
+									echo get_the_title();
+									?>
+								</div>
+					 		</div>
+							</a>
+						<?php
+					endwhile;
+				endif;
+				wp_reset_postdata();
+
+
+
 				if ( have_posts() ) :
 					if ( is_home() && ! is_front_page() ) :
 						?>
+
+						<div class="blog-body">
 						<header>
 							<h1 class="page-title screen-reader-text">
 								<?php single_post_title(); ?>
@@ -58,7 +89,7 @@ get_header();
 				<?php
 					get_sidebar();
 				 ?>
-
+			 </div> <!-- #blog-body end -->
 				</main><!-- #main -->
 			</div><!-- #primary -->
 
