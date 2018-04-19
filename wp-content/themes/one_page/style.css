@@ -1517,6 +1517,11 @@ body {
 	background-color: white;
 }
 
+.blog .sticky {
+	background-color: gray;
+	display: none;
+}
+
 .blog #blog-sidebar {
 	padding-right: 1em;
 }

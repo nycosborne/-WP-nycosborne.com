@@ -8,7 +8,12 @@
   .blog-post-area{
     background-color: white;
   }
-  #blog-sidebar{
+  .sticky{
+    background-color: gray;
+    display: none;
+  }
+  #blog-sidebar
+    float: left;
     padding-right: 1em;
     h2{
       margin: 0;
