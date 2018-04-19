@@ -14,7 +14,6 @@
 
 get_header();
 ?>
-
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 
@@ -22,6 +21,7 @@ get_header();
 			$sticky = get_option( 'sticky_posts' );
 			rsort( $sticky );
 			$sticky = array_slice( $sticky, 0, 5 );
+			if (count($sticky) >= 1) :
 			$the_query = new WP_Query( array( 'post__in' => $sticky, 'ignore_sticky_posts' => 1 ) );
 				if ( $the_query->have_posts() ) :
 					while ( $the_query->have_posts() ) :
@@ -44,6 +44,7 @@ get_header();
 						<?php
 					endwhile;
 				endif;
+			endif;
 				wp_reset_postdata();
 
 

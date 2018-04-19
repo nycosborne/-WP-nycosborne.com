@@ -1,5 +1,6 @@
 .blog{
   color: black;
+ text-align: center;
 
   .site-main{
 
@@ -7,6 +8,7 @@
   .blog-body{
     display: flex;
     justify-content: space-between;
+    text-align: left;
   }
   .blog-post-area{
     background-color: white;

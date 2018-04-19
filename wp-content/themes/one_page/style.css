@@ -1503,6 +1503,7 @@ body {
 --------------------------------------------------------------*/
 .blog {
 	color: black;
+	text-align: center;
 	background: white;
 }
 
@@ -1511,6 +1512,7 @@ body {
 	display: flex;
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
+	text-align: left;
 }
 
 .blog .blog-post-area {
