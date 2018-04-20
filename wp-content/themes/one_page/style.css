@@ -1504,18 +1504,21 @@ body {
 .blog {
 	color: black;
 	text-align: center;
+	padding-left: 15px;
 	background: white;
 }
 
 .blog .blog-post {
 	display: -ms-flexbox;
 	display: flex;
-	-ms-flex-pack: justify;
-	    justify-content: space-between;
+	-ms-flex-pack: distribute;
+	    justify-content: space-around;
+	max-width: 700px;
 }
 
 .blog .blog-post .entry-content {
 	display: inline;
+	text-align: left;
 }
 
 .blog .blog-post .entry-content h2 {
@@ -1547,6 +1550,7 @@ body {
 
 .blog .blog-thumbnail {
 	display: inline;
+	min-width: 200px;
 }
 
 .blog .sticky {
