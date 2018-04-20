@@ -20,9 +20,11 @@
 		endif;
  ?>
 	</header><!-- .entry-header -->
+  <div class="blog-post">
+
 
 	<?php
-	one_page_post_thumbnail();
+  the_post_thumbnail('thumbnail');
 	?>
 
 	<div class="entry-content">
@@ -45,11 +47,12 @@
 			'after'  => '</div>',
 		) );
 		?>
-	</div><!-- .entry-content -->
 
-	<footer class="entry-footer">
+	</div><!-- .entry-content -->
+</div><!-- .blog-post -->
+	<!-- <footer class="entry-footer">
 		<?php
-			// one_page_entry_footer();
+			 // one_page_entry_footer();
 		?>
 	</footer><!-- .entry-footer -->
 	 <!-- adding <hr> for line between artices -->

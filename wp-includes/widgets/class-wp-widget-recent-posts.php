@@ -88,7 +88,7 @@ class WP_Widget_Recent_Posts extends WP_Widget {
 			<?php foreach ( $r->posts as $recent_post ) : ?>
 				<?php
 
-				echo get_the_post_thumbnail($recent_post->ID , 'thumbnail');
+				echo get_the_post_thumbnail($recent_post->ID , 'wordpress-thumbnail');
 				$post_title = get_the_title( $recent_post->ID );
 				$title      = ( ! empty( $post_title ) ) ? $post_title : __( '(no title)' );
 				?>

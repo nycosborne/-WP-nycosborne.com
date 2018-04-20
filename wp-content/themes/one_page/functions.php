@@ -42,6 +42,10 @@ if ( ! function_exists( 'one_page_setup' ) ) :
 		 */
 		add_theme_support( 'post-thumbnails' );
 
+		add_image_size('one_page_index_post', 500, 500 , true);
+		add_image_size('top_post_side_size', 300, 300 , true);
+		add_image_size( 'wordpress-thumbnail', 200, 200, array( 'left', 'center' ) );
+
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'one_page' ),
