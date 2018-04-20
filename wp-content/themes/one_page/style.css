@@ -1504,7 +1504,7 @@ body {
 .blog {
 	color: black;
 	text-align: center;
-	padding-left: 15px;
+	padding-left: 9%;
 	background: white;
 }
 
@@ -1519,6 +1519,7 @@ body {
 .blog .blog-post .entry-content {
 	display: inline;
 	text-align: left;
+	margin: 10px 0px 0px 10px;
 }
 
 .blog .blog-post .entry-content h2 {
@@ -1576,7 +1577,7 @@ body {
 
 .blog #blog-sidebar {
 	float: left;
-	padding-right: 1em;
+	padding-left: 1em;
 }
 
 .blog #blog-sidebar h2 {
@@ -1599,13 +1600,14 @@ body {
 .blog ul {
 	display: block;
 	list-style-type: none;
-	padding: 0 4em 0 0;
+	padding: 0 0 0 0;
 	margin: 0;
-	margin-left: 1em;
+	margin-left: 25px;
 }
 
 .blog li {
-	padding-top: 1em;
+	padding-bottom: 2em;
+	max-width: 200px;
 }
 
 .blog hr {

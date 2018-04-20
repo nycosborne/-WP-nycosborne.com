@@ -67,18 +67,27 @@ class WP_Widget_Recent_Posts extends WP_Widget {
 		 * @param array $args     An array of arguments used to retrieve the recent posts.
 		 * @param array $instance Array of settings for the current widget.
 		 */
-		$r = new WP_Query( apply_filters( 'widget_posts_args', array(
-			'posts_per_page'      => $number,
-			'no_found_rows'       => true,
-			'post_status'         => 'publish',
-			'ignore_sticky_posts' => true,
-		), $instance ) );
+		// $r = new WP_Query( apply_filters( 'widget_posts_args', array(
+		// 	'posts_per_page'      => $number,
+		// 	'no_found_rows'       => true,
+		// 	'post_status'         => 'publish',
+		// 	'ignore_sticky_posts' => true,
+		// ), $instance ) );
+
+		$r = new WP_Query( 'orderby=comment_count&posts_per_page=5');
+
+
+
+
+
+
 
 		if ( ! $r->have_posts() ) {
 			return;
 		}
 		?>
 		<?php echo $args['before_widget']; ?>
+
 		<?php
 		if ( $title ) {
 			echo $args['before_title'] . $title . $args['after_title'];
