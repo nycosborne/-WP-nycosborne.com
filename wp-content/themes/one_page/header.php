@@ -31,40 +31,62 @@
 		</figure>
 	<?php endif ?>
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			if ( is_front_page() && is_home() ) :
-				?>
-				<!-- <?php 	the_custom_logo(); ?> -->
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+	<?php
+	if (is_home()) :
+		?>
+		<header id="masthead" class="blog-site-header">
+		<div class="blog-site-branding">
+				<div class="blog-title">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</div>
+
+				<div class="blog-menu">
+					<a><?php echo one_page_get_svg(array( 'icon' => 'facebook')); ?></a>
+					<a><?php echo one_page_get_svg(array( 'icon' => 'linkedin')); ?></a>
+					<a><?php echo one_page_get_svg(array( 'icon' => 'github')); ?></a>
+					<a><?php echo one_page_get_svg(array( 'icon' => 'twitter')); ?></a>
+
+
+				</div>
+			</div>
+
+		<?php
+
+
+		else :
+		?>
+		<header id="masthead" class="site-header">
+			<div class="site-branding">
+					<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
 				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+				$one_page_description = get_bloginfo( 'description', 'display' );
+				if ( $one_page_description || is_customize_preview() ) :
+					?>
+
+				<?php endif; ?>
+			</div><!-- .site-branding -->
+			<div class="nav-container">
+			<nav id="site-navigation" class="main-navigation">
+				<label for="toggle-menu" class="menu-on"><?php echo one_page_get_svg(array( 'icon' => 'menu')); ?></label>
+				<input id="toggle-menu" type="checkbox" />
+				<label for="toggle-menu" class="menu-off"></label>
+
 				<?php
-			endif;
-			$one_page_description = get_bloginfo( 'description', 'display' );
-			if ( $one_page_description || is_customize_preview() ) :
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary-menu',
+				) );
 				?>
 
-			<?php endif; ?>
-		</div><!-- .site-branding -->
-		<div class="nav-container">
-		<nav id="site-navigation" class="main-navigation">
-			<label for="toggle-menu" class="menu-on"><?php echo one_page_get_svg(array( 'icon' => 'menu')); ?></label>
-			<input id="toggle-menu" type="checkbox" />
-			<label for="toggle-menu" class="menu-off"></label>
+			</nav><!-- #site-navigation -->
+		</div> <!-- END OF .nav-container -->
+		<?php
+	endif;
+	?>
 
-			<?php
-			wp_nav_menu( array(
-				'theme_location' => 'menu-1',
-				'menu_id'        => 'primary-menu',
-			) );
-			?>
 
-		</nav><!-- #site-navigation -->
-	</div> <!-- END OF .nav-container -->
+
+
 	</header><!-- #masthead -->
 
 	<div id="content" class="site-content">

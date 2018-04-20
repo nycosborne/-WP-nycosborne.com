@@ -46,6 +46,7 @@ if ( ! function_exists( 'one_page_setup' ) ) :
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'one_page' ),
 			'menu-2' => esc_html__( 'Footer', 'one_page' ),
+			'blog-menu' => esc_html__( 'Social media menu for blog', 'one_page' ),
 		) );
 
 		/*

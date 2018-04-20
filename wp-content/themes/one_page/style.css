@@ -1513,6 +1513,7 @@ body {
 	-ms-flex-pack: justify;
 	    justify-content: space-between;
 	text-align: left;
+	clear: left;
 }
 
 .blog .blog-post-area {
@@ -1578,6 +1579,42 @@ body {
 	display: block;
 	margin: 1em 0;
 	padding: 0;
+}
+
+/*--------------------------------------------------------------
+## blog Header
+--------------------------------------------------------------*/
+.blog-site-header {
+	text-align: left;
+	display: inline;
+	float: left;
+	width: 100%;
+}
+
+.blog-site-branding {
+	text-align: left;
+	display: inline;
+	padding-left: 5%;
+}
+
+.blog-site-branding a {
+	font-size: 1em;
+}
+
+.blog-title {
+	font-size: 2em;
+	text-align: left;
+	display: inline;
+}
+
+.blog-menu {
+	padding-left: 55%;
+	text-align: left;
+	display: inline;
+}
+
+.blog-menu a {
+	font-size: 3pt;
 }
 
 /*# sourceMappingURL=../one_page/sass/maps/style.css.map */
