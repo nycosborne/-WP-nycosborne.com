@@ -12,7 +12,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>
 	<header class="entry-header">
 		<hr class="artile-line"/>
-    
+
 
 	</header><!-- .entry-header -->
 
@@ -21,9 +21,12 @@
 
 
 	<div class="blog-post">
-    <?php
-    the_post_thumbnail('thumbnail');
-    ?>
+		<div class="blog-thumbnail">
+			<?php
+	    the_post_thumbnail('thumbnail');
+	    ?>
+		</div>
+
     <div class="entry-content">
     <?php
     if ( is_singular() ) :

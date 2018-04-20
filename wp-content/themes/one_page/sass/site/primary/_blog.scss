@@ -6,7 +6,18 @@
 
   }
   .blog-post{
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    .entry-content{
+      display: inline;
+      h2{
+        margin: 0;
+        font-size: 2em;
+      }
+      p{
+        margin: 0;
+      }
+    }
   }
   .blog-body{
     display: flex;
@@ -19,6 +30,10 @@
     display: inline;
   }
   article{
+    display: inline;
+  }
+
+  .blog-thumbnail{
     display: inline;
   }
   .sticky{
@@ -71,7 +86,7 @@
 
   hr {
     display: block;
-    margin: 1em 0;
+    margin: 0em 0;
     padding: 0;
   }
 

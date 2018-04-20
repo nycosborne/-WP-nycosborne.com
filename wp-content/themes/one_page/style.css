@@ -1508,7 +1508,23 @@ body {
 }
 
 .blog .blog-post {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+.blog .blog-post .entry-content {
 	display: inline;
+}
+
+.blog .blog-post .entry-content h2 {
+	margin: 0;
+	font-size: 2em;
+}
+
+.blog .blog-post .entry-content p {
+	margin: 0;
 }
 
 .blog .blog-body {
@@ -1526,6 +1542,10 @@ body {
 }
 
 .blog article {
+	display: inline;
+}
+
+.blog .blog-thumbnail {
 	display: inline;
 }
 
@@ -1586,7 +1606,7 @@ body {
 
 .blog hr {
 	display: block;
-	margin: 1em 0;
+	margin: 0em 0;
 	padding: 0;
 }
 
