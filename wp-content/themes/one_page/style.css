@@ -1507,6 +1507,10 @@ body {
 	background: white;
 }
 
+.blog .blog-post {
+	display: inline;
+}
+
 .blog .blog-body {
 	display: -ms-flexbox;
 	display: flex;
@@ -1518,6 +1522,11 @@ body {
 
 .blog .blog-post-area {
 	background-color: white;
+	display: inline;
+}
+
+.blog article {
+	display: inline;
 }
 
 .blog .sticky {

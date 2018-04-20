@@ -5,6 +5,9 @@
   .site-main{
 
   }
+  .blog-post{
+    display: inline;
+  }
   .blog-body{
     display: flex;
     justify-content: space-between;
@@ -13,6 +16,10 @@
   }
   .blog-post-area{
     background-color: white;
+    display: inline;
+  }
+  article{
+    display: inline;
   }
   .sticky{
     display: none;
