@@ -1554,6 +1554,24 @@ body {
 	min-width: 200px;
 }
 
+.blog .blog-excerpt {
+	display: inline;
+	padding-top: 10px;
+	padding-bottom: 25px;
+}
+
+.blog .blog-post-by {
+	display: inline;
+}
+
+.blog .blog-post-by a {
+	color: red;
+}
+
+.blog .blog-meta {
+	padding-bottom: 15px;
+}
+
 .blog .sticky {
 	display: none;
 }

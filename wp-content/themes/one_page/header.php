@@ -41,12 +41,10 @@
 				</div>
 
 				<div class="blog-menu">
-					<a><?php echo one_page_get_svg(array( 'icon' => 'facebook')); ?></a>
-					<a><?php echo one_page_get_svg(array( 'icon' => 'linkedin')); ?></a>
-					<a><?php echo one_page_get_svg(array( 'icon' => 'github')); ?></a>
-					<a><?php echo one_page_get_svg(array( 'icon' => 'twitter')); ?></a>
-
-
+					<a href="https://github.com/nycosborne" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'github')); ?></a>
+					<a href="https://twitter.com/nycosborne" target="_blank"> <?php echo one_page_get_svg(array( 'icon' => 'twitter')); ?></a>
+					<a href="https://www.facebook.com/dan.osborne.1840/" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'facebook')); ?></a>
+					<a href="https://www.linkedin.com/in/dan-osborne/" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'linkedin')); ?></a>
 				</div>
 			</div>
 

@@ -42,6 +42,21 @@
     display: inline;
     min-width: 200px;
   }
+  .blog-excerpt{
+    display: inline;
+    padding-top: 10px;
+    padding-bottom: 25px;
+  }
+  .blog-post-by{
+    display: inline;
+    a{
+      color: red;
+    }
+
+  }
+  .blog-meta{
+    padding-bottom: 15px;
+  }
   .sticky{
     display: none;
   }

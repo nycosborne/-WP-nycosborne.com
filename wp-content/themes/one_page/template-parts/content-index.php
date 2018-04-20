@@ -15,13 +15,9 @@
 
 
 	</header><!-- .entry-header -->
-
-
-
-
-
 	<div class="blog-post">
 		<div class="blog-thumbnail">
+			
 			<?php
 	    the_post_thumbnail('thumbnail');
 	    ?>
@@ -35,13 +31,22 @@
       the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
     endif;
  ?>
+ 	<div class="blog-meta">
+
+
+		<?php one_page_posted_on();?>
+		&#124;
+			<div class="blog-post-by">
+				<?php
+				one_page_posted_by();
+				?>
+			</div>
+		</div> <!--end of blog-meta -->
+ 			<div class="blog-excerpt">
+				<?php the_excerpt(); ?>
+			</div>
 		<?php
-		
-		one_page_posted_on();
-		one_page_posted_by();
-
-		the_excerpt();
-
+		// TODO: and screed reader to the_excerpt
 		// the_content( sprintf(
 		// 	wp_kses(
 		// 		/* translators: %s: Name of current post. Only visible to screen readers */
