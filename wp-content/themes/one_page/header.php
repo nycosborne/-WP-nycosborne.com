@@ -40,7 +40,8 @@
 		<div class="blog-site-branding">
 				<div class="blog-title">
 
-					<a href="<?php echo esc_url( home_url( '/tech-blog/' ) ); ?>" rel="home">nycosborne Tech-Blog</a>
+					<a href="<?php echo esc_url( home_url( '/tech-blog/' ) ); ?>" rel="home">nycosborne's Tech-Blog </a>
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> Home</a>
 				</div>
 				<div class="blog-menu">
 					<a href="https://github.com/nycosborne" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'github')); ?></a>
@@ -57,7 +58,8 @@
 			<header id="masthead" class="blog-site-header">
 			<div class="blog-site-branding">
 					<div class="blog-title">
-							<a href="<?php echo esc_url( home_url( '/tech-blog/' ) ); ?>" rel="home">nycosborne Tech-Blog</a>
+							<a href="<?php echo esc_url( home_url( '/tech-blog/' ) ); ?>" rel="home">nycosborne's Tech-Blog </a>
+							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> Home</a>
 					</div>
 
 					<div class="blog-menu">

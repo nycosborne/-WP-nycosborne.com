@@ -1509,8 +1509,10 @@ body {
 }
 
 .blog .widget-title {
+	padding-right: 15px;
+	margin-right: 15px;
 	min-width: 200px;
-	margin-left: 25px;
+	margin-left: 5px;
 }
 
 .blog .blog-body {
@@ -1739,7 +1741,7 @@ body {
 	font-size: 3pt;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 550px) {
 	.blog-menu {
 		display: block;
 	}
@@ -1752,6 +1754,7 @@ body {
 	background-color: white;
 	color: black;
 	padding-left: 9%;
+	text-align: left;
 }
 
 .single .site-content {
@@ -1779,6 +1782,24 @@ body {
 .single li {
 	padding-bottom: 2em;
 	max-width: 200px;
+}
+
+.single .widget-title {
+	min-width: 200px;
+	margin-left: 25px;
+}
+
+.single aside {
+	display: none;
+}
+
+@media screen and (min-width: 880px) {
+	.single aside {
+		display: block;
+	}
+	.single aside h2 {
+		font-size: 1.7em;
+	}
 }
 
 /*# sourceMappingURL=../one_page/sass/maps/style.css.map */

@@ -2,6 +2,7 @@
   background-color: white;
   color: black;
  padding-left: 9%;
+ text-align: left;
  .site-content{
    background-color: white;
  }
@@ -25,5 +26,20 @@
    li{
      padding-bottom: 2em;
      max-width: 200px;
+   }
+   .widget-title{
+     min-width: 200px;
+     margin-left: 25px;
+   }
+   aside{
+     display: none;
+   }
+   @media screen and (min-width: 880px) {
+     aside{
+       display: block;
+       h2{
+         font-size: 1.7em;
+       }
+     }
    }
 }
