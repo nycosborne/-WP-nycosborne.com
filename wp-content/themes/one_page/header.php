@@ -32,14 +32,16 @@
 	<?php endif ?>
 
 	<?php
-	if (is_home()) : 
+	if (is_home()) :
+
 		?>
+
 		<header id="masthead" class="blog-site-header">
 		<div class="blog-site-branding">
 				<div class="blog-title">
-					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
-				</div>
 
+					<a href="<?php echo esc_url( home_url( '/tech-blog/' ) ); ?>" rel="home">nycosborne Tech-Blog</a>
+				</div>
 				<div class="blog-menu">
 					<a href="https://github.com/nycosborne" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'github')); ?></a>
 					<a href="https://twitter.com/nycosborne" target="_blank"> <?php echo one_page_get_svg(array( 'icon' => 'twitter')); ?></a>
@@ -51,10 +53,11 @@
 		<?php
 		elseif (is_singular() && !is_front_page()) :
 			?>
+
 			<header id="masthead" class="blog-site-header">
 			<div class="blog-site-branding">
 					<div class="blog-title">
-						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+							<a href="<?php echo esc_url( home_url( '/tech-blog/' ) ); ?>" rel="home">nycosborne Tech-Blog</a>
 					</div>
 
 					<div class="blog-menu">

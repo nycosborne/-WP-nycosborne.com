@@ -7,8 +7,9 @@
 
 .blog-site-branding{
   text-align: left;
-  display: inline;
-  padding-left: 5%;
+  display: flex;
+  justify-content: space-between;
+
   a {
     font-size: 1em;
   }
@@ -19,10 +20,15 @@
   display: inline;
 }
 .blog-menu{
-  padding-left: 55%;
   text-align: left;
-  display: inline;
+  display: none;
+  padding-right: 15px;
   a {
     font-size: 3pt;
+  }
+}
+@media screen and (min-width: 500px) {
+  .blog-menu{
+    display: block;
   }
 }
