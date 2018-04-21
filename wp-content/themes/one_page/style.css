@@ -1569,12 +1569,13 @@ body {
 
 .blog .blog-post .entry-title {
 	position: absolute;
-	top: 0em;
-	right: 0em;
+	top: 180px;
+	right: 80px;
 	margin-right: 0em;
 	margin-left: 0em;
 	line-height: 50%;
-	background-color: red;
+	max-width: 200px;
+	min-width: 200px;
 }
 
 .blog .blog-post .entry-title a {
@@ -1602,6 +1603,8 @@ body {
 	}
 	.blog .blog-post .entry-title {
 		position: relative;
+		top: 0em;
+		right: 0em;
 		background-color: white;
 	}
 	.blog .blog-post .entry-title a {

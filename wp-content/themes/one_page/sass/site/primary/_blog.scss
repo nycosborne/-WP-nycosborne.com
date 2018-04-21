@@ -52,12 +52,13 @@
     }
     .entry-title{
       position: absolute;
-      top: 0em;
-      right: 0em;
+      top: 180px;
+      right: 80px;
       margin-right: 0em;
       margin-left: 0em;
       line-height: 50%;
-      background-color: red;
+      max-width: 200px;
+      min-width: 200px;
       a{
         color: white;
         font-size: 12pt;
@@ -87,8 +88,8 @@
       }
       .entry-title{
          position: relative;
-        // top: 0em;
-        // right: 0em;
+          top: 0em;
+          right: 0em;
         // margin-left: 0em;
         // font-size: 1.5em;
           background-color: white;
