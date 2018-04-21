@@ -5,31 +5,7 @@
  .widget-title{
    min-width: 200px;
    margin-left: 25px;
-
-
- }
-
-  .site-main{
-
-  }
-  .blog-post{
-    display: flex;
-    justify-content: space-around;
-    max-width: 700px;
-    .entry-content{
-      display: inline;
-      text-align: left;
-      margin: 10px 0px 0px 10px;
-
-      h2{
-        margin: 0;
-        font-size: 2em;
-      }
-      p{
-        margin: 0;
-      }
-    }
-  }
+}
   .blog-body{
     display: flex;
     justify-content: space-between;
@@ -47,19 +23,93 @@
       }
     }
 
+    
+
   }
+  .blog-post{
+   display: flex;
+    justify-content: space-around;
+    max-width: 700px;
+    .entry-content{
+      display: inline;
+      text-align: left;
+      margin: 10px 0px 0px 10px;
+
+      h2{
+        margin: 0;
+        font-size: 2em;
+      }
+      p{
+        margin: 0;
+      }
+    }
+    .blog-excerpt{
+      display: none;
+    }
+    .blog-meta{
+      display: none;
+    }
+    .entry-title{
+      position: absolute;
+      top: 0em;
+      right: 00em;
+      margin-right: 22em;
+      margin-left: 2em;
+      line-height: 50%;
+      a{
+        color: white;
+        font-size: 12pt;
+      }
+
+    }
+    .blog-thumbnail{
+      display: inline;
+      max-width: 200px;
+    }
+
+    @media screen and (min-width: 600px) {
+      .blog-post{
+
+      }
+      .blog-excerpt{
+        display: block;
+      }
+      .blog-thumbnail{
+        display: inline;
+        min-width: 200px;
+      }
+      .blog-meta{
+        display: block;
+      }
+      .entry-title{
+        position: relative;
+        top: 0em;
+        right: 0em;
+        margin-left: 0em;
+        font-size: 1.5em;
+        a{
+          color: black;
+        }
+
+      }
+    }
+  }
+
   .blog-post-area{
     background-color: white;
     display: inline;
+
+
+
   }
   article{
     display: inline;
+    // img{
+    //   max-width: 500px
+    // }
   }
 
-  .blog-thumbnail{
-    display: inline;
-    min-width: 200px;
-  }
+
   .blog-excerpt{
     display: inline;
     padding-top: 10px;
