@@ -1670,4 +1670,40 @@ body {
 	font-size: 3pt;
 }
 
+/*--------------------------------------------------------------
+## blog Single
+--------------------------------------------------------------*/
+.single {
+	background-color: white;
+	color: black;
+	padding-left: 9%;
+}
+
+.single .site-content {
+	background-color: white;
+}
+
+.single .site-main {
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-pack: justify;
+	    justify-content: space-between;
+}
+
+.single a {
+	color: black;
+}
+
+.single ul {
+	display: inline;
+	list-style-type: none;
+	padding: 0 0 0 0;
+	margin: 0;
+}
+
+.single li {
+	padding-bottom: 2em;
+	max-width: 200px;
+}
+
 /*# sourceMappingURL=../one_page/sass/maps/style.css.map */

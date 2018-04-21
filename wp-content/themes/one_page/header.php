@@ -32,7 +32,7 @@
 	<?php endif ?>
 
 	<?php
-	if (is_home()) :
+	if (is_home()) : 
 		?>
 		<header id="masthead" class="blog-site-header">
 		<div class="blog-site-branding">
@@ -49,7 +49,22 @@
 			</div>
 
 		<?php
+		elseif (is_singular() && !is_front_page()) :
+			?>
+			<header id="masthead" class="blog-site-header">
+			<div class="blog-site-branding">
+					<div class="blog-title">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+					</div>
 
+					<div class="blog-menu">
+						<a href="https://github.com/nycosborne" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'github')); ?></a>
+						<a href="https://twitter.com/nycosborne" target="_blank"> <?php echo one_page_get_svg(array( 'icon' => 'twitter')); ?></a>
+						<a href="https://www.facebook.com/dan.osborne.1840/" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'facebook')); ?></a>
+						<a href="https://www.linkedin.com/in/dan-osborne/" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'linkedin')); ?></a>
+					</div>
+				</div>
+			<?php
 
 		else :
 		?>

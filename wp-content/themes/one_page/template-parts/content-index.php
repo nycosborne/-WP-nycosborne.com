@@ -16,12 +16,17 @@
 
 	</header><!-- .entry-header -->
 	<div class="blog-post">
+
+
 		<div class="blog-thumbnail">
-			
+			<a href="<?php echo esc_url(get_permalink()); ?>">
 			<?php
+
 	    the_post_thumbnail('thumbnail');
 	    ?>
+			</a>
 		</div>
+	
 
     <div class="entry-content">
     <?php
