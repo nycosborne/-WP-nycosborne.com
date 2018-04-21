@@ -1,0 +1,29 @@
+.single{
+  background-color: white;
+  color: black;
+ padding-left: 9%;
+ .site-content{
+   background-color: white;
+ }
+ .content-area{
+
+ }
+ .site-main{
+   display: flex;
+   justify-content: space-between;
+  }
+ a {
+   color: black;
+ }
+  ul{
+     display: inline;
+     list-style-type: none;
+     padding: 0 0 0 0;
+     margin: 0;
+
+   }
+   li{
+     padding-bottom: 2em;
+     max-width: 200px;
+   }
+}
