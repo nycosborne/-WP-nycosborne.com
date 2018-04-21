@@ -1545,8 +1545,17 @@ body {
 	clear: left;
 }
 
-.blog .blog-body aside h2 {
-	font-size: 1.7em;
+.blog .blog-body aside {
+	display: none;
+}
+
+@media screen and (min-width: 880px) {
+	.blog .blog-body aside {
+		display: block;
+	}
+	.blog .blog-body aside h2 {
+		font-size: 1.7em;
+	}
 }
 
 .blog .blog-post-area {

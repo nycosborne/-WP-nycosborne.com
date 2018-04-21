@@ -36,10 +36,17 @@
     text-align: left;
     clear: left;
     aside{
-      h2{
-        font-size: 1.7em;
+      display: none;
+    }
+    @media screen and (min-width: 880px) {
+      aside{
+        display: block;
+        h2{
+          font-size: 1.7em;
+        }
       }
     }
+
   }
   .blog-post-area{
     background-color: white;
