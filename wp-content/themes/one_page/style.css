@@ -1802,4 +1802,17 @@ body {
 	}
 }
 
+.single .artile-line-blog-comment {
+	width: 90%;
+}
+
+.single .comment-content {
+	padding-left: 25px;
+}
+
+.single .comment-metadata {
+	min-width: 250px;
+	padding: 10px 10px;
+}
+
 /*# sourceMappingURL=../one_page/sass/maps/style.css.map */
