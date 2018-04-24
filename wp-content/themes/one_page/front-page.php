@@ -20,7 +20,7 @@ get_header();
 			<div class="landing-page">
 
 				<?php
-
+				//QUery for only without parent
 				$parent_only_query = new WP_Query(array(
 					'post_type' => 'page',
 					'post_parent' => 0,
