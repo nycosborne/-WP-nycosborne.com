@@ -27,6 +27,7 @@ get_header();
 					'order' => 'asc',
 				));
 
+
 				if ($parent_only_query->have_posts()) {
 				?>
 					<?php
@@ -42,13 +43,15 @@ get_header();
 								?>
 								<div class="thumbnail-holder">
 									<?php
+
 									one_page_post_thumbnail(); ?>
 								</div>
 								<?php
 							}else {
 								?> <div class="excerpt-holder"> <a href='<?php  echo get_permalink() ?>'
 							 <?php
-								the_excerpt();
+
+								echo the_excerpt();
 								?> </div> </a> <?php
 							}
 								echo '</div>';
