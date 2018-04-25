@@ -18,75 +18,79 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="landing-page">
-
-				<?php
-				//QUery for only without parent
-				$parent_only_query = new WP_Query(array(
-					'post_type' => 'page',
-					'post_parent' => 0,
-					'order' => 'asc',
-				));
-
-
-				if ($parent_only_query->have_posts()) {
-				?>
-					<?php
-
-						while ($parent_only_query->have_posts()) {
-							$parent_only_query->the_post();
-							if (get_the_title() != 'Home') {
-								if (get_the_title() != 'About Me') {
-									if (get_the_title() != 'Web Projects') {
-
-							echo '<div class="pages-list">';
-							?><div class="title-holder"><?php
-							echo get_the_title();
-							?></div><?php
-							if (has_post_thumbnail()){
-								?>
-								<div class="thumbnail-holder">
-									<?php
-
-									one_page_post_thumbnail(); ?>
-								</div>
-								<?php
-							}else {
-								?> <div class="excerpt-holder"> <a href='<?php  echo get_permalink() ?>'
-							 <?php
-
-								echo the_excerpt();
-								?> </div> </a> <?php
+				<section id="about-me" class="page-section">
+							<?php
+							$query = new WP_Query( 'pagename=tech-blog' );
+							// The Loop
+							if ( $query->have_posts() ) {
+								while ( $query->have_posts() ) {
+									$query->the_post();
+									echo '<div class="entry-content">';
+									one_page_post_thumbnail();
+									echo '</div>';
+									break;
+								}
 							}
-								echo '</div>';
-						}
-						wp_reset_postdata();
-						}
-					}
-				}
-			}
-				?>
-
-
-							<section id="call-to-action">
-								<div class="indent clear">
-									<?php
-									$query = new WP_Query( 'pagename=tech-blog' );
-									// The Loop
-									if ( $query->have_posts() ) {
-										while ( $query->have_posts() ) {
-											$query->the_post();
-											echo '<div class="entry-content">';
-											one_page_post_thumbnail();
-											echo '</div>';
-											break;
-										}
-									}
 
 						/* Restore original Post Data */
 						wp_reset_postdata();
 						?>
-</div><!-- .indent -->
-</section>
+				</section>
+				<section id="photo-site" class="page-section">
+							<?php
+							$query = new WP_Query( 'pagename=tech-blog' );
+							// The Loop
+							if ( $query->have_posts() ) {
+								while ( $query->have_posts() ) {
+									$query->the_post();
+									echo '<div class="entry-content">';
+									one_page_post_thumbnail();
+									echo '</div>';
+									break;
+								}
+							}
+
+						/* Restore original Post Data */
+						wp_reset_postdata();
+						?>
+				</section>
+				<section id="mobile" class="page-section">
+							<?php
+							$query = new WP_Query( 'pagename=tech-blog' );
+							// The Loop
+							if ( $query->have_posts() ) {
+								while ( $query->have_posts() ) {
+									$query->the_post();
+									echo '<div class="entry-content">';
+									one_page_post_thumbnail();
+									echo '</div>';
+									break;
+								}
+							}
+
+						/* Restore original Post Data */
+						wp_reset_postdata();
+						?>
+				</section>
+				<section id="bot" class="page-section">
+							<?php
+							$query = new WP_Query( 'pagename=tech-blog' );
+							// The Loop
+							if ( $query->have_posts() ) {
+								while ( $query->have_posts() ) {
+									$query->the_post();
+									echo '<div class="entry-content">';
+									one_page_post_thumbnail();
+									echo '</div>';
+									break;
+								}
+							}
+
+						/* Restore original Post Data */
+						wp_reset_postdata();
+						?>
+				</section>
+
 
 
 

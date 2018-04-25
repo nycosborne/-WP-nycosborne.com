@@ -1315,74 +1315,58 @@ div.menu-menu-1-container li:hover a {
 /*--------------------------------------------------------------
 ## New Splash
 --------------------------------------------------------------*/
-body {
-	background-color: #ededed;
+.page {
 	text-align: center;
+	position: relative;
 }
 
-.landing-page {
+.post-thumbnail img {
+	height: 500px;
+	width: 500px;
+}
+
+.page-section {
+	width: 100%;
+	line-height: 0;
+	position: relative;
+}
+
+@media (min-width: 850px) {
+	.page-section {
+		width: 50%;
+		line-height: 0;
+		position: relative;
+	}
+	img {
+		height: inherit;
+		width: inherit;
+	}
+}
+
+#about-me {
+	background-color: red;
+	float: right;
+}
+
+#photo-site {
+	background-color: green;
+	float: left;
+}
+
+#mobile {
+	background-color: blue;
+	float: right;
+}
+
+#bot {
+	background-color: yellow;
+	float: left;
+}
+
+.site-title {
 	text-align: left;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	-ms-flex-align: center;
-	    align-items: center;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-ms-flex-direction: row;
-	    flex-direction: row;
-	background-color: #ededed;
-	max-width: 720px;
 }
 
-.thumbnail-holder a {
-	max-height: 50px;
-	max-width: 50px;
-}
-
-.title-holder {
-	color: #fff;
-}
-
-.excerpt-holder {
-	height: 250px;
-	width: 250px;
-}
-
-.pages-list {
-	height: 250px;
-	width: 350px;
-	margin: 5px;
-	background-color: #c1c1c1;
-	border-style: solid;
-	border-width: 5px;
-	border-color: #bcbcbc;
-}
-
-/* @media (min-width:600px) {
-  .pages-list{
-    margin: 10px;
-    padding: 15px;
-  }
-
-}
-
-@media (min-width:1450px) {
-  .pages-list{
-    margin: 50px 80px;
-  }
-}
-@media (min-width:1700px) {
-  .pages-list{
-    margin: 50px 100px;
-  }
-}
-@media (min-width:1700px) {
-  .pages-list{
-    margin: 50px 125px;
-  }
-} */
 /*--------------------------------------------------------------
 ## blog
 --------------------------------------------------------------*/
