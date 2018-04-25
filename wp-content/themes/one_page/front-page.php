@@ -18,6 +18,7 @@ get_header();
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="landing-page">
+				<h3>Projects :</h3>
 				<section id="about-me" class="page-section">
 							<?php
 							$query = new WP_Query( 'pagename=tech-blog' );

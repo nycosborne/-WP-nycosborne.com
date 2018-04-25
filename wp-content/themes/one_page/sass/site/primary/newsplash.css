@@ -2,18 +2,31 @@
   text-align: center;
   position: relative;
 }
+.site-main{
+  max-width: 850px;
+}
 
+.landing-page{
+  padding-top: 30px;
+  max-width: 1600px;
+
+}
+.landing-page h3{
+ text-align: left;
+
+}
 .post-thumbnail img{
-    height: 500px;
-    width: 500px;
+    height: 300px;
+    width: 300px;
 }
 
 .page-section{
+padding-top: 25px;
 width: 100%;
 line-height: 0;
 position: relative;
 }
-@media (min-width:850px) {
+@media (min-width:900px) {
   .page-section{
     width: 50%;
     line-height: 0;
@@ -23,24 +36,33 @@ position: relative;
     height: inherit;
     width: inherit;
   }
+  #about-me{
+    padding-right: 100px;
+  }
+  #photo-site{
+    padding-left: 100px
+  }
+  #mobile{
+    padding-right: 100px
+  }
+
+  #bot{
+    padding-left: 100px
+  }
 }
 
 
 #about-me{
-  background-color: red;
   float: right;
 }
 #photo-site{
-  background-color: green;
   float: left;
 }
 #mobile{
-  background-color: blue;
   float: right;
 }
 
 #bot{
-  background-color: yellow;
   float: left;
 }
 
