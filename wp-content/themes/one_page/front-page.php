@@ -35,6 +35,9 @@ get_header();
 						while ($parent_only_query->have_posts()) {
 							$parent_only_query->the_post();
 							if (get_the_title() != 'Home') {
+								if (get_the_title() != 'About Me') {
+									if (get_the_title() != 'Web Projects') {
+
 							echo '<div class="pages-list">';
 							?><div class="title-holder"><?php
 							echo get_the_title();
@@ -57,9 +60,36 @@ get_header();
 								echo '</div>';
 						}
 						wp_reset_postdata();
+						}
 					}
+				}
 			}
 				?>
+
+
+							<section id="call-to-action">
+								<div class="indent clear">
+									<?php
+									$query = new WP_Query( 'pagename=tech-blog' );
+									// The Loop
+									if ( $query->have_posts() ) {
+										while ( $query->have_posts() ) {
+											$query->the_post();
+											echo '<div class="entry-content">';
+											one_page_post_thumbnail();
+											echo '</div>';
+											break;
+										}
+									}
+
+						/* Restore original Post Data */
+						wp_reset_postdata();
+						?>
+</div><!-- .indent -->
+</section>
+
+
+
 			</div> <!--end .landing-page -->
 		</main><!-- #main -->
 	</div><!-- #primary -->
