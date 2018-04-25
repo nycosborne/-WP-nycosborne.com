@@ -1019,7 +1019,7 @@ SVG Fallbacks
 ## Posts and pages
 --------------------------------------------------------------*/
 body {
-	background-color: #fff;
+	background-color: #ededed;
 }
 
 .site-header {
@@ -1325,7 +1325,6 @@ div.menu-menu-1-container li:hover a {
 }
 
 .landing-page {
-	padding-top: 30px;
 	max-width: 1600px;
 }
 
@@ -1339,7 +1338,7 @@ div.menu-menu-1-container li:hover a {
 }
 
 .page-section {
-	padding-top: 25px;
+	/* padding-top: 25px; */
 	width: 100%;
 	line-height: 0;
 	position: relative;
@@ -1355,7 +1354,7 @@ div.menu-menu-1-container li:hover a {
 		height: inherit;
 		width: inherit;
 	}
-	#about-me {
+	#blog {
 		padding-right: 100px;
 	}
 	#photo-site {
@@ -1363,13 +1362,15 @@ div.menu-menu-1-container li:hover a {
 	}
 	#mobile {
 		padding-right: 100px;
+		padding-top: 20px;
 	}
 	#bot {
 		padding-left: 100px;
+		padding-top: 20px;
 	}
 }
 
-#about-me {
+#blog {
 	float: right;
 }
 
@@ -1383,6 +1384,23 @@ div.menu-menu-1-container li:hover a {
 
 #bot {
 	float: left;
+}
+
+.bio {
+	text-align: left;
+	display: inline;
+}
+
+.about-me {
+	display: inline;
+}
+
+.experience {
+	display: inline;
+}
+
+.skills {
+	display: inline;
 }
 
 .site-title {

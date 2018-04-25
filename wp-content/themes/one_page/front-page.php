@@ -19,7 +19,7 @@ get_header();
 		<main id="main" class="site-main">
 			<div class="landing-page">
 				<h3>Projects :</h3>
-				<section id="about-me" class="page-section">
+				<section id="blog" class="page-section">
 							<?php
 							$query = new WP_Query( 'pagename=tech-blog' );
 							// The Loop
@@ -91,6 +91,23 @@ get_header();
 						wp_reset_postdata();
 						?>
 				</section>
+
+
+				<div class="bio">
+					<section class="about-me">
+							<h4>About Me</h4>
+							<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
+					</section>
+					<section class="experience">
+						<h4>Experience</h4>
+						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
+					</section>
+					<section class="skills">
+						<h4>Skills</h4>
+						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
+						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
+					</section>
+				</div>
 
 
 
