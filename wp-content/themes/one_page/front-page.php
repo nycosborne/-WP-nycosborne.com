@@ -110,11 +110,21 @@ get_header();
 						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
 					</section>
 				</div>
-
-
-
-
 			</div> <!--end .landing-page -->
+			<section class="contact-me">
+				<div id="reachout">
+					<h1>Contact</h1>
+					<p>Feel Free to Drop Me a Line</p>
+				</div>
+				<div id="form">
+					<?php echo do_shortcode( '[contact-form-7 id="204" title="Contact form 1"]' ); ?>
+				</div>
+
+
+			</section>
+
+
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

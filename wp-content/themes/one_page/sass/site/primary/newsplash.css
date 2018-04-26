@@ -95,8 +95,18 @@ position: relative;
   float: left;
   margin: 25px 0;
 }
+.contact-me{
 
-
+}
+#reachout{
+  float: left;
+}
+#form{
+  float: right;
+}
+.wpcf7-submit{
+  text-align: right;
+}
 
 
 .site-title{
