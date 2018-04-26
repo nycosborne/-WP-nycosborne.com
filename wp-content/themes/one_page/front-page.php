@@ -98,10 +98,12 @@ get_header();
 							<h4>About Me</h4>
 							<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
 					</section>
+					<div class="divider"></div>
 					<section class="experience">
 						<h4>Experience</h4>
 						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
 					</section>
+					<div class="divider"></div>
 					<section class="skills">
 						<h4>Skills</h4>
 						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>

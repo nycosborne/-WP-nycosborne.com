@@ -1389,18 +1389,34 @@ div.menu-menu-1-container li:hover a {
 .bio {
 	text-align: left;
 	display: inline;
+	font-size: .8em;
+	background-color: red;
 }
 
 .about-me {
 	display: inline;
+	float: left;
+	padding: 0 10px;
 }
 
 .experience {
 	display: inline;
+	float: left;
+	padding: 0 10px;
 }
 
 .skills {
 	display: inline;
+	float: left;
+	padding: 0 10px;
+}
+
+.divider {
+	height: 100px;
+	width: 1px;
+	background-color: black;
+	float: left;
+	margin: 25px 0;
 }
 
 .site-title {
