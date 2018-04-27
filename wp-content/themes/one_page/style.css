@@ -1071,10 +1071,14 @@ article {
 --------------------------------------------------------------*/
 .site-header {
 	position: relative;
-	background-color: #afacaa;
+	background-color: #fff;
 	max-height: 400px;
 	display: -ms-flexbox;
 	display: flex;
+}
+
+.site-header a {
+	color: black;
 }
 
 .site-header.sticky-header {
@@ -1119,7 +1123,7 @@ figure {
 }
 
 .site-title a {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
@@ -1144,11 +1148,11 @@ figure {
 }
 
 .nav-container a {
-	color: #fff;
+	color: black;
 }
 
 .nav-container a:visited {
-	color: #fff;
+	color: black;
 }
 
 .nav-container a:hover, .nav-container a:focus, .nav-container a:active {
@@ -1317,7 +1321,6 @@ div.menu-menu-1-container li:hover a {
 --------------------------------------------------------------*/
 .page {
 	text-align: center;
-	position: relative;
 }
 
 .site-main {
@@ -1386,49 +1389,71 @@ div.menu-menu-1-container li:hover a {
 	float: left;
 }
 
-.bio {
-	text-align: left;
-	display: inline;
-	font-size: .8em;
-	background-color: red;
-}
-
 .about-me {
+	max-width: 33%;
 	display: inline;
 	float: left;
-	padding: 0 10px;
+	padding: 50px 10px;
 }
 
 .experience {
+	max-width: 33%;
 	display: inline;
 	float: left;
-	padding: 0 10px;
+	padding: 50px 10px;
 }
 
 .skills {
+	max-width: 33%;
 	display: inline;
 	float: left;
-	padding: 0 10px;
+	padding: 50px 10px;
 }
 
 .divider {
-	height: 100px;
+	height: 125px;
 	width: 1px;
 	background-color: black;
 	float: left;
-	margin: 25px 0;
+	margin: 50px 0 0 0;
+}
+
+.bio {
+	position: relative;
+	padding-top: 100px;
+	text-align: left;
+	display: inline;
+	font-size: .8em;
+}
+
+.bio p {
+	float: left;
+	display: inline-block;
+	margin: 0;
+}
+
+.bio h4 {
+	margin: 0;
+}
+
+.contact-me {
+	clear: both;
+	position: relative;
+	padding: 0 15px;
 }
 
 #reachout {
+	padding-top: 100px;
 	float: left;
 }
 
 #form {
+	padding-top: 100px;
 	float: right;
 }
 
 .wpcf7-submit {
-	text-align: right;
+	width: 100%;
 }
 
 .site-title {

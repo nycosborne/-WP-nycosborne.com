@@ -96,21 +96,41 @@ get_header();
 				<div class="bio">
 					<section class="about-me">
 							<h4>About Me</h4>
-							<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
+							<p>I’m passionate about developing
+								application that add value to people’s lives.
+								Love coding and find the greatest satisfaction in
+								life in creative problem solving leading to a productive end.
+								I was working as a service admin at the Soho Apple when
+								this love affair started, then went back to school for my CS
+								 degree with a focus on OOP application development.
+							</p>
 					</section>
 					<div class="divider"></div>
 					<section class="experience">
 						<h4>Experience</h4>
-						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
+						<p>Worked with in Agile workflow as a QA engineer for mobile
+							 gaming studio.
+								Additionally I’ve worked with diverse group of clientele on
+								both web and mobile projects
+							</p>
 					</section>
 					<div class="divider"></div>
 					<section class="skills">
-						<h4>Skills</h4>
-						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
-						<p>ecwjcnr;ibeiu;bqriub;qiriqbrhqiweri	er;ribbub</p>
+						<h4>What I Can Do for You!</h4>
+						<p>Build mobile application both negatively and leveraging
+							React Native framework. Additional  Java experience using
+							Android Studio, Spring and JSP.</p>
+						<p>Build Web sites and applications using HTML5, CSS,
+							JS and PHP and MySQL. Web dev tools and frameworks include
+							WordPress, React, Node.js  	</p>
+							<p>Work collaboratively using git (GitHub, SourceTree and CLT)</p>
+							<p>Manager staging and deployment servers for web projects and
+								publish mobile application to respective app stores.</p>
 					</section>
 				</div>
 			</div> <!--end .landing-page -->
+
+
 			<section class="contact-me">
 				<div id="reachout">
 					<h1>Contact</h1>
