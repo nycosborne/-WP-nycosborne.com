@@ -80,6 +80,13 @@ position: relative;
   float: left;
   padding: 50px 10px;
 }
+.cv-icon{
+  font-size: .4em;
+  a{
+    color: black;
+  }
+}
+
 .skills{
   max-width: 33%;
   display: inline;

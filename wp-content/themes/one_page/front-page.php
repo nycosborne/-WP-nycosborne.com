@@ -113,6 +113,15 @@ get_header();
 								Additionally I’ve worked with diverse group of clientele on
 								both web and mobile projects
 							</p>
+							<a href="wp-content/themes/one_page/assets/Daniel_A._Osborne.vcf">
+							<div class="cv-icon">
+									<?php echo one_page_get_svg(array( 'icon' => 'box-add')); ?>
+									<div class="full-cv-titile">
+											<p>Full CV</p>
+									</div>
+							</a>
+							</div>
+
 					</section>
 					<div class="divider"></div>
 					<section class="skills">

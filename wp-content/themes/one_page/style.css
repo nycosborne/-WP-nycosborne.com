@@ -1403,6 +1403,14 @@ div.menu-menu-1-container li:hover a {
 	padding: 50px 10px;
 }
 
+.cv-icon {
+	font-size: .4em;
+}
+
+.cv-icon a {
+	color: black;
+}
+
 .skills {
 	max-width: 33%;
 	display: inline;
