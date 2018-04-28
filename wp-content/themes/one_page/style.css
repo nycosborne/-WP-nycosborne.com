@@ -1323,12 +1323,10 @@ div.menu-menu-1-container li:hover a {
 	text-align: center;
 }
 
-.site-main {
-	max-width: 850px;
-}
-
 .landing-page {
+	display: inline-block;
 	max-width: 1600px;
+	padding-bottom: 75px;
 }
 
 .landing-page h3 {
@@ -1338,6 +1336,7 @@ div.menu-menu-1-container li:hover a {
 .post-thumbnail img {
 	height: 300px;
 	width: 300px;
+	padding-bottom: 10px;
 }
 
 .page-section {
@@ -1389,6 +1388,27 @@ div.menu-menu-1-container li:hover a {
 	float: left;
 }
 
+.bio {
+	padding-top: 25px;
+	text-align: left;
+	display: inline-block;
+	font-size: .8em;
+	background-color: #1a1919;
+	width: 100%;
+}
+
+.bio p {
+	float: left;
+	display: inline-block;
+	margin: 0;
+	color: #fff;
+}
+
+.bio h4 {
+	color: #fff;
+	margin: 0;
+}
+
 .about-me {
 	max-width: 33%;
 	display: inline;
@@ -1408,7 +1428,7 @@ div.menu-menu-1-container li:hover a {
 }
 
 .cv-icon a {
-	color: black;
+	color: white;
 }
 
 .skills {
@@ -1421,27 +1441,9 @@ div.menu-menu-1-container li:hover a {
 .divider {
 	height: 125px;
 	width: 1px;
-	background-color: black;
+	background-color: white;
 	float: left;
 	margin: 50px 0 0 0;
-}
-
-.bio {
-	position: relative;
-	padding-top: 100px;
-	text-align: left;
-	display: inline;
-	font-size: .8em;
-}
-
-.bio p {
-	float: left;
-	display: inline-block;
-	margin: 0;
-}
-
-.bio h4 {
-	margin: 0;
 }
 
 .contact-me {

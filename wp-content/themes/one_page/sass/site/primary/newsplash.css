@@ -3,11 +3,13 @@
 
 }
 .site-main{
-  max-width: 850px;
+
 }
 
 .landing-page{
+  display: inline-block;
   max-width: 1600px;
+  padding-bottom: 75px;
 
 }
 .landing-page h3{
@@ -17,6 +19,7 @@
 .post-thumbnail img{
     height: 300px;
     width: 300px;
+    padding-bottom: 10px;
 }
 
 .page-section{
@@ -67,6 +70,26 @@ position: relative;
   float: left;
 }
 
+.bio{
+  padding-top: 25px;
+  text-align: left;
+  display: inline-block;
+  font-size: .8em;
+  background-color: #1a1919;
+  width: 100%;
+
+
+  p{
+    float: left;
+    display: inline-block;
+    margin: 0;
+    color: #fff;
+  }
+  h4{
+    color: #fff;
+    margin: 0;
+  }
+}
 
 .about-me{
   max-width: 33%;
@@ -83,7 +106,7 @@ position: relative;
 .cv-icon{
   font-size: .4em;
   a{
-    color: black;
+    color: white;
   }
 }
 
@@ -96,27 +119,12 @@ position: relative;
 .divider {
   height: 125px;
   width: 1px;
-  background-color: black;
+  background-color: white;
   float: left;
   margin: 50px 0 0 0;
 }
 
-.bio{
-  position: relative;
-  padding-top: 100px;
-  text-align: left;
-  display: inline;
-  font-size: .8em;
 
-  p{
-    float: left;
-    display: inline-block;
-    margin: 0;
-  }
-  h4{
-    margin: 0;
-  }
-}
 .contact-me{
   clear: both;
   position: relative;
