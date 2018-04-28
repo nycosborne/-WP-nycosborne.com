@@ -57,13 +57,14 @@ get_header();
 				</section>
 				<section id="mobile" class="page-section">
 							<?php
-							$query = new WP_Query( 'pagename=tech-blog' );
+							$query = new WP_Query( 'pagename=lifting' );
 							// The Loop
 							if ( $query->have_posts() ) {
+								echo "string";
 								while ( $query->have_posts() ) {
 									$query->the_post();
 									echo '<div class="entry-content">';
-									one_page_post_thumbnail();
+										one_page_post_thumbnail();
 									echo '</div>';
 									break;
 								}
