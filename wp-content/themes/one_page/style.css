@@ -1249,32 +1249,10 @@ div.menu-menu-1-container li:hover a {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
-@media (min-width: 600px) {
-	.site-footer {
-		position: fixed;
-		width: 100%;
-		z-index: 90;
-		bottom: 0;
-		left: 0;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-pack: center;
-		    justify-content: center;
-		text-align: center;
-		background-color: #afacaa;
-		color: #fff;
-	}
-}
-
 .site-footer {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: center;
-	    justify-content: center;
-	text-align: center;
-	background-color: #afacaa;
-	padding-top: 10px;
+	padding-left: 15px;
 	color: #fff;
+	background-color: #000;
 }
 
 .footer-by-line {
@@ -1447,18 +1425,21 @@ div.menu-menu-1-container li:hover a {
 }
 
 .contact-me {
+	margin: auto;
 	clear: both;
+	display: block;
+	padding-top: 100px;
+	max-width: 800px;
 	position: relative;
 	padding: 0 15px;
+	text-align: left;
 }
 
 #reachout {
-	padding-top: 100px;
 	float: left;
 }
 
 #form {
-	padding-top: 100px;
 	float: right;
 }
 

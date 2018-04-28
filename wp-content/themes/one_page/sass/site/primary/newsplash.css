@@ -126,19 +126,22 @@ position: relative;
 
 
 .contact-me{
-  clear: both;
+  margin: auto;
+    clear: both;
+  display: block;
+  padding-top: 100px;
+  max-width: 800px;
   position: relative;
   padding: 0 15px;
+  text-align: left;
 
 
 }
 #reachout{
-  padding-top: 100px;
   float: left;
 
 }
 #form{
-  padding-top: 100px;
   float: right;
 }
 .wpcf7-submit{

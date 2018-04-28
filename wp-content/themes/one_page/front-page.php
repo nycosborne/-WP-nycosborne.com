@@ -140,8 +140,9 @@ get_header();
 
 			<section class="contact-me">
 				<div id="reachout">
-					<h1>Contact</h1>
-					<p>Feel Free to Drop Me a Line</p>
+					<h1>Contact Me</h1>
+					<p>Please feel free to reatch out and drop me a line</p>
+					<p>dan@nycosborne.com</p>
 				</div>
 				<div id="form">
 					<?php echo do_shortcode( '[contact-form-7 id="204" title="Contact form 1"]' ); ?>
