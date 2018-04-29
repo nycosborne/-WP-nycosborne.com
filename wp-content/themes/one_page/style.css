@@ -1028,7 +1028,7 @@ body {
 
 .site-content {
 	position: block;
-	background-color: #ededed;
+	background-color: #fff;
 	height: 100%;
 }
 
@@ -1071,10 +1071,14 @@ article {
 --------------------------------------------------------------*/
 .site-header {
 	position: relative;
-	background-color: #afacaa;
+	background-color: #fff;
 	max-height: 400px;
 	display: -ms-flexbox;
 	display: flex;
+}
+
+.site-header a {
+	color: black;
 }
 
 .site-header.sticky-header {
@@ -1119,7 +1123,7 @@ figure {
 }
 
 .site-title a {
-	color: white;
+	color: black;
 	text-decoration: none;
 }
 
@@ -1144,11 +1148,11 @@ figure {
 }
 
 .nav-container a {
-	color: #fff;
+	color: black;
 }
 
 .nav-container a:visited {
-	color: #fff;
+	color: black;
 }
 
 .nav-container a:hover, .nav-container a:focus, .nav-container a:active {
@@ -1245,32 +1249,10 @@ div.menu-menu-1-container li:hover a {
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
-@media (min-width: 600px) {
-	.site-footer {
-		position: fixed;
-		width: 100%;
-		z-index: 90;
-		bottom: 0;
-		left: 0;
-		display: -ms-flexbox;
-		display: flex;
-		-ms-flex-pack: center;
-		    justify-content: center;
-		text-align: center;
-		background-color: #afacaa;
-		color: #fff;
-	}
-}
-
 .site-footer {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: center;
-	    justify-content: center;
-	text-align: center;
-	background-color: #afacaa;
-	padding-top: 10px;
+	padding-left: 15px;
 	color: #fff;
+	background-color: #000;
 }
 
 .footer-by-line {
@@ -1312,190 +1294,168 @@ div.menu-menu-1-container li:hover a {
 /*--------------------------------------------------------------
 ## Front Page
 --------------------------------------------------------------*/
-.landing-page .entry-content {
-	position: relative;
-	padding: 10px;
-	width: 100%;
-}
-
-.about-me {
-	padding: 50px;
-	color: #fff;
-	color: white;
-	background: #c3814b;
-	padding: 1rem 0;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-}
-
-.about-me .entry-content-excerpt {
-	height: 35%;
-	width: 35%;
-	padding: 25px;
-}
-
-.experience {
-	padding: 1rem 0;
-	background: #dfbe6f;
-}
-
-.experience .experience-title {
-	font-size: 2em;
-	width: 100%;
-	text-align: center;
-}
-
-.experience .experience-title a {
-	color: #051923;
-}
-
-.experience .download-icon {
-	padding-left: 55px;
-}
-
-.mobile-project {
-	display: block;
-	text-align: center;
-	padding: 15px;
-	color: #fff;
-	background: #dbad67;
-}
-
-.mobile-project ul {
-	margin-left: 0;
-}
-
-.mobile-project .mobile-project-list-dev {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-}
-
-.mobile-project .mobile-project-li {
-	display: inline-block;
-	padding: 25px 10px;
-	width: 200px;
-}
-
-.mobile-project .project-title {
-	font-size: 2em;
-	width: 100%;
-	text-align: center;
-}
-
-.contact-me {
-	padding: 1em;
-	background: #ffdb84;
-	-ms-flex-pack: center;
-	    justify-content: center;
-}
-
-.contact-me .contact-me-title {
-	font-size: 2em;
-	width: 100%;
-	text-align: center;
-}
-
-.contact-me .contact-me-title a {
-	color: #051923;
-}
-
-.contact-me input {
-	width: 60%;
-}
-
-.contact-me .wpcf7-submit {
-	width: 60px;
-}
-
-.web-project {
-	width: 100%;
-	background: #edca76;
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: center;
-	    justify-content: center;
-}
-
-.web-project .web-projects-title {
-	font-size: 2em;
-	width: 100%;
-	text-align: center;
-}
-
-.web-project .web-projects-title a {
-	color: #051923;
-}
-
 /*--------------------------------------------------------------
 ## New Splash
 --------------------------------------------------------------*/
-body {
-	background-color: #ededed;
+.page {
+	text-align: center;
 }
 
 .landing-page {
-	display: -ms-flexbox;
-	display: flex;
-	-ms-flex-pack: distribute;
-	    justify-content: space-around;
-	-ms-flex-align: center;
-	    align-items: center;
-	-ms-flex-wrap: wrap;
-	    flex-wrap: wrap;
-	-ms-flex-direction: row;
-	    flex-direction: row;
-	background-color: #ededed;
+	display: inline-block;
+	max-width: 1600px;
+	padding-bottom: 75px;
 }
 
-.thumbnail-holder a {
-	max-height: 50px;
-	max-width: 50px;
+.landing-page a {
+	color: black;
 }
 
-.title-holder {
+.landing-page h3 {
+	text-align: left;
+}
+
+.post-thumbnail img {
+	height: 300px;
+	width: 300px;
+	padding-bottom: 10px;
+}
+
+.page-section {
+	/* padding-top: 25px; */
+	width: 100%;
+	line-height: 0;
+	position: relative;
+}
+
+@media (min-width: 900px) {
+	.page-section {
+		width: 50%;
+		line-height: 0;
+		position: relative;
+	}
+	img {
+		height: inherit;
+		width: inherit;
+	}
+	#blog {
+		padding-right: 100px;
+	}
+	#photo-site {
+		padding-left: 100px;
+	}
+	#mobile {
+		padding-right: 100px;
+		padding-top: 20px;
+	}
+	#bot {
+		padding-left: 100px;
+		padding-top: 20px;
+	}
+	#bot .entry-content {
+		display: inline-block;
+	}
+}
+
+#blog {
+	float: right;
+}
+
+#photo-site {
+	float: left;
+}
+
+#mobile {
+	float: right;
+}
+
+#bot {
+	float: left;
+}
+
+.bio {
+	padding-top: 25px;
+	text-align: left;
+	display: inline-block;
+	font-size: .8em;
+	background-color: #1a1919;
+	width: 100%;
+}
+
+.bio p {
+	float: left;
+	display: inline-block;
+	margin: 0;
 	color: #fff;
 }
 
-.excerpt-holder {
-	max-width: 450px;
+.bio h4 {
+	color: #fff;
+	margin: 0;
 }
 
-.pages-list {
-	margin: 5px 5px;
-	padding: 15px;
-	background-color: #c1c1c1;
-	border-style: solid;
-	border-width: 5px;
-	border-color: #bcbcbc;
+.about-me {
+	max-width: 33%;
+	display: inline;
+	float: left;
+	padding: 50px 10px;
 }
 
-@media (min-width: 600px) {
-	.pages-list {
-		margin: 10px;
-		padding: 15px;
-	}
+.experience {
+	max-width: 33%;
+	display: inline;
+	float: left;
+	padding: 50px 10px;
 }
 
-@media (min-width: 1450px) {
-	.pages-list {
-		margin: 50px 80px;
-	}
+.cv-icon {
+	font-size: .4em;
 }
 
-@media (min-width: 1700px) {
-	.pages-list {
-		margin: 50px 100px;
-	}
+.cv-icon a {
+	color: white;
 }
 
-@media (min-width: 1700px) {
-	.pages-list {
-		margin: 50px 125px;
-	}
+.skills {
+	max-width: 33%;
+	display: inline;
+	float: left;
+	padding: 50px 10px;
+}
+
+.divider {
+	height: 125px;
+	width: 1px;
+	background-color: white;
+	float: left;
+	margin: 50px 0 0 0;
+}
+
+.contact-me {
+	margin: auto;
+	clear: both;
+	display: block;
+	padding-top: 100px;
+	max-width: 800px;
+	position: relative;
+	padding: 0 15px;
+	text-align: left;
+}
+
+#reachout {
+	float: left;
+}
+
+#form {
+	float: right;
+}
+
+.wpcf7-submit {
+	width: 100%;
+}
+
+.site-title {
+	text-align: left;
 }
 
 /*--------------------------------------------------------------

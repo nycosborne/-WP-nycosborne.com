@@ -19,7 +19,12 @@
 				printf( esc_html__( 'by %s.', 'one_page' ),'<a href="http://nycosborne.com">Dan O</a>' );
 				?>
 		</div><!-- .footer -->
+<<<<<<< HEAD
+		<div class="footer-menu">
+			
+=======
 		<!-- <div class="footer-menu">
+>>>>>>> front-page
 			<?php
 				wp_nav_menu( array(
 					'theme_location' => 'menu-2',

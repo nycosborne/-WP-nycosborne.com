@@ -19,17 +19,9 @@
 
 	<?php wp_head(); ?>
 </head>
-
 <body <?php body_class(); ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'one_page' ); ?></a>
-
-	<?php if (get_header_image() && is_front_page()) : ?>
-		<figure class="header-image">
-				<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>"
-				width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" />
-		</figure>
-	<?php endif ?>
 
 	<?php
 	if (is_home()) :
@@ -52,7 +44,7 @@
 			</div>
 
 		<?php
-		elseif (is_singular() && !is_front_page()) :
+		elseif (is_singular() && !is_page()) :
 			?>
 
 			<header id="masthead" class="blog-site-header">
@@ -61,7 +53,6 @@
 							<a href="<?php echo esc_url( home_url( '/tech-blog/' ) ); ?>" rel="home">nycosborne's Tech-Blog </a>
 							<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"> Home</a>
 					</div>
-
 					<div class="blog-menu">
 						<a href="https://github.com/nycosborne" target="_blank"><?php echo one_page_get_svg(array( 'icon' => 'github')); ?></a>
 						<a href="https://twitter.com/nycosborne" target="_blank"> <?php echo one_page_get_svg(array( 'icon' => 'twitter')); ?></a>
@@ -72,6 +63,7 @@
 			<?php
 
 		else :
+
 		?>
 		<header id="masthead" class="site-header">
 			<div class="site-branding">
@@ -105,6 +97,14 @@
 
 
 
+
 	</header><!-- #masthead -->
+
+	<?php if (get_header_image() && is_front_page()) : ?>
+		<figure class="header-image">
+				<img src="<?php echo( get_header_image() ); ?>" alt="<?php echo( get_bloginfo( 'title' ) ); ?>"
+				width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" />
+		</figure>
+	<?php endif ?>
 
 	<div id="content" class="site-content">

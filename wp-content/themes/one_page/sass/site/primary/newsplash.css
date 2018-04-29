@@ -1,57 +1,160 @@
-body{
-  background-color: #ededed;
+.page{
+  text-align: center;
+
 }
+.site-main{
+
+}
+
 .landing-page{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: row;
-  background-color: #ededed;
-
-}
-
-.thumbnail-holder a{
-  max-height: 50px;
-  max-width: 50px;
-
-}
-.title-holder{
-  color: #fff;
-}
-.excerpt-holder{
-  max-width: 450px;
-}
-.pages-list{
-  margin: 5px 5px;
-  padding: 15px;
-  
-
-  background-color: #c1c1c1;
-  border-style: solid;
-  border-width: 5px;
-  border-color: #bcbcbc;
-}
-@media (min-width:600px) {
-  .pages-list{
-    margin: 10px;
-    padding: 15px;
+  display: inline-block;
+  max-width: 1600px;
+  padding-bottom: 75px;
+  a{
+    color: black;
   }
-
-}
-
-@media (min-width:1450px) {
-  .pages-list{
-    margin: 50px 80px;
+  h3{
+   text-align: left;
   }
 }
-@media (min-width:1700px) {
-  .pages-list{
-    margin: 50px 100px;
+
+.post-thumbnail img{
+    height: 300px;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.page-section{
+/* padding-top: 25px; */
+width: 100%;
+line-height: 0;
+position: relative;
+}
+@media (min-width:900px) {
+  .page-section{
+    width: 50%;
+    line-height: 0;
+    position: relative
+  }
+  img{
+    height: inherit;
+    width: inherit;
+  }
+  #blog{
+
+    padding-right: 100px;
+
+  }
+  #photo-site{
+    padding-left: 100px;
+  }
+  #mobile{
+    padding-right: 100px;
+    padding-top: 20px;
+  }
+
+  #bot{
+    padding-left: 100px;
+    padding-top: 20px;
+    .entry-content{
+      display: inline-block;
+    }
   }
 }
-@media (min-width:1700px) {
-  .pages-list{
-    margin: 50px 125px;
+
+
+#blog{
+  float: right;
+}
+#photo-site{
+  float: left;
+}
+#mobile{
+  float: right;
+}
+#bot{
+  float: left;
+}
+
+.bio{
+  padding-top: 25px;
+  text-align: left;
+  display: inline-block;
+  font-size: .8em;
+  background-color: #1a1919;
+  width: 100%;
+
+
+  p{
+    float: left;
+    display: inline-block;
+    margin: 0;
+    color: #fff;
   }
+  h4{
+    color: #fff;
+    margin: 0;
+  }
+}
+
+.about-me{
+  max-width: 33%;
+  display: inline;
+  float: left;
+  padding: 50px 10px;
+}
+.experience{
+  max-width: 33%;
+  display: inline;
+  float: left;
+  padding: 50px 10px;
+}
+.cv-icon{
+  font-size: .4em;
+  a{
+    color: white;
+  }
+}
+
+.skills{
+  max-width: 33%;
+  display: inline;
+  float: left;
+  padding: 50px 10px;
+}
+.divider {
+  height: 125px;
+  width: 1px;
+  background-color: white;
+  float: left;
+  margin: 50px 0 0 0;
+}
+
+
+.contact-me{
+  margin: auto;
+    clear: both;
+  display: block;
+  padding-top: 100px;
+  max-width: 800px;
+  position: relative;
+  padding: 0 15px;
+  text-align: left;
+
+
+}
+#reachout{
+  float: left;
+
+}
+#form{
+  float: right;
+}
+.wpcf7-submit{
+  width: 100%;
+}
+
+
+.site-title{
+  text-align: left;
 }
