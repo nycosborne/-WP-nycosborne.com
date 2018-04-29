@@ -10,12 +10,14 @@
   display: inline-block;
   max-width: 1600px;
   padding-bottom: 75px;
-
+  a{
+    color: black;
+  }
+  h3{
+   text-align: left;
+  }
 }
-.landing-page h3{
- text-align: left;
 
-}
 .post-thumbnail img{
     height: 300px;
     width: 300px;
@@ -41,6 +43,7 @@ position: relative;
   #blog{
 
     padding-right: 100px;
+
   }
   #photo-site{
     padding-left: 100px;
@@ -53,6 +56,9 @@ position: relative;
   #bot{
     padding-left: 100px;
     padding-top: 20px;
+    .entry-content{
+      display: inline-block;
+    }
   }
 }
 

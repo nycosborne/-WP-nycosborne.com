@@ -40,6 +40,7 @@ get_header();
 									?>	<a href="<?php esc_url(the_permalink(150)); ?>"><?php
 									echo '<div class="entry-content">';
 									one_page_post_thumbnail();
+
 									echo '</div>';
 									?></a><?php
 									break;
@@ -93,14 +94,31 @@ get_header();
 				</section>
 				<section id="bot" class="page-section">
 							<?php
-							$query = new WP_Query( 'pagename=tech-blog' );
+							$query = new WP_Query(array(
+								'post_type' => 'page',
+								'page_id' => 25,
+
+							));
 							// The Loop
 							if ( $query->have_posts() ) {
+
+
 								while ( $query->have_posts() ) {
 									$query->the_post();
-									echo '<div class="entry-content">';
-									one_page_post_thumbnail();
-									echo '</div>';
+									?>
+									<a href="<?php esc_url(the_permalink()) ?>">
+									<div class="entry-content">
+										<div class="splash-img">
+											<?php one_page_post_thumbnail(); ?>
+										</div>
+										<div class="splash-title">
+											<?php the_title(); ?>
+										</div>
+										<div class="splash-excerpt">
+											<?php echo the_excerpt(); ?>
+										</div>
+									</div>
+									</a><?php
 									break;
 								}
 							}

@@ -1307,6 +1307,10 @@ div.menu-menu-1-container li:hover a {
 	padding-bottom: 75px;
 }
 
+.landing-page a {
+	color: black;
+}
+
 .landing-page h3 {
 	text-align: left;
 }
@@ -1347,6 +1351,9 @@ div.menu-menu-1-container li:hover a {
 	#bot {
 		padding-left: 100px;
 		padding-top: 20px;
+	}
+	#bot .entry-content {
+		display: inline-block;
 	}
 }
 
