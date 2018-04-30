@@ -9,7 +9,7 @@
 .landing-page{
   display: inline-block;
   max-width: 1200px;
-  padding-bottom: 75px;
+  padding-bottom: 200px;
   a{
     color: black;
   }
@@ -41,9 +41,9 @@ position: relative;
 
 }
 .splash-img{
-  position: absolute;
+  /* position: absolute;
   top: 0em;
-  right: 0em;
+  right: 0em; */
 
 
 

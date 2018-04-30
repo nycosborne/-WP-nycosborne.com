@@ -1304,7 +1304,7 @@ div.menu-menu-1-container li:hover a {
 .landing-page {
 	display: inline-block;
 	max-width: 1200px;
-	padding-bottom: 75px;
+	padding-bottom: 200px;
 }
 
 .landing-page a {
@@ -1340,9 +1340,9 @@ div.menu-menu-1-container li:hover a {
 }
 
 .splash-img {
-	position: absolute;
-	top: 0em;
-	right: 0em;
+	/* position: absolute;
+  top: 0em;
+  right: 0em; */
 }
 
 .splash-excerpt {

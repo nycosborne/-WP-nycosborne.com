@@ -39,12 +39,21 @@ get_header();
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
 									$query->the_post();
-									?>	<a href="<?php esc_url(the_permalink(150)); ?>"><?php
-									echo '<div class="entry-content">';
-									one_page_post_thumbnail();
+									?>	<a href="<?php esc_url(the_permalink(150)); ?>">
+										<div class="entry-content">
+											<div class="splash-img">
+												<?php one_page_post_thumbnail(); ?>
+											</div>
+											<div class="splash-title">
+												<?php the_title(); ?>
+											</div>
+											<div class="splash-excerpt">
+												<?php echo the_excerpt(); ?>
+											</div>
 
-									echo '</div>';
-									?></a><?php
+
+									</div>
+									</a><?php
 									break;
 								}
 							}
@@ -59,10 +68,20 @@ get_header();
 							// The Loop
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
-									$query->the_post();
-									echo '<div class="entry-content">';
-									one_page_post_thumbnail();
-									echo '</div>';
+									$query->the_post();?>
+									<div class="entry-content">
+										<div class="splash-img">
+											<?php one_page_post_thumbnail(); ?>
+										</div>
+										<div class="splash-title">
+											<?php the_title(); ?>
+										</div>
+										<div class="splash-excerpt">
+											<?php echo the_excerpt(); ?>
+										</div>
+
+									</div>
+									<?php
 									break;
 								}
 							}
@@ -82,10 +101,19 @@ get_header();
 							));
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
-									$query->the_post();
-									echo '<div class="entry-content">';
-										one_page_post_thumbnail();
-									echo '</div>';
+									$query->the_post(); ?>
+									<div class="entry-content">
+										<div class="splash-img">
+											<?php one_page_post_thumbnail(); ?>
+										</div>
+										<div class="splash-title">
+											<?php the_title(); ?>
+										</div>
+										<div class="splash-excerpt">
+											<?php echo the_excerpt(); ?>
+										</div>
+									</div>
+									<?php
 									break;
 								}
 							}
