@@ -45,7 +45,8 @@ get_header();
 												<?php one_page_post_thumbnail(); ?>
 											</div>
 											<div class="splash-title">
-												<?php the_title(); ?>
+												<p>My Tech Blog</p>
+												<!-- <?php the_title(); ?> -->
 											</div>
 											<div class="splash-excerpt">
 												<?php echo the_excerpt(); ?>
@@ -69,6 +70,7 @@ get_header();
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
 									$query->the_post();?>
+									<a href="<?php esc_url(the_permalink(150)) ?>">
 									<div class="entry-content">
 										<div class="splash-img">
 											<?php one_page_post_thumbnail(); ?>
@@ -81,6 +83,7 @@ get_header();
 										</div>
 
 									</div>
+								</a>
 									<?php
 									break;
 								}
@@ -102,6 +105,7 @@ get_header();
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
 									$query->the_post(); ?>
+									<a href="<?php esc_url(the_permalink()) ?>">
 									<div class="entry-content">
 										<div class="splash-img">
 											<?php one_page_post_thumbnail(); ?>
@@ -113,6 +117,7 @@ get_header();
 											<?php echo the_excerpt(); ?>
 										</div>
 									</div>
+								</a>
 									<?php
 									break;
 								}

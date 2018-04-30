@@ -36,14 +36,11 @@ position: relative;
     position: relative;
     display: block;
     line-height: normal;
-    background-color: gray;
+
   }
 
 }
 .splash-img{
-  /* position: absolute;
-  top: 0em;
-  right: 0em; */
 
 
 
@@ -93,35 +90,7 @@ position: relative;
 
 
 }
-@media (min-width:900px) {
-  .page-section{
-    width: 50%;
-    line-height: 0;
-    position: relative
-  }
-  img{
-    height: inherit;
-    width: inherit;
-  }
-  #blog{
 
-    padding-right: 100px;
-
-  }
-  #photo-site{
-    padding-left: 100px;
-  }
-  #mobile{
-    padding-right: 100px;
-    padding-top: 20px;
-  }
-
-  #bot{
-    padding-left: 100px;
-    padding-top: 20px;
-
-  }
-}
 
 
 #blog{
@@ -159,13 +128,13 @@ position: relative;
 }
 
 .about-me{
-  max-width: 33%;
+  max-width: 100%;
   display: inline;
   float: left;
-  padding: 50px 10px;
+  padding: 25px 10px;
 }
 .experience{
-  max-width: 33%;
+  max-width: 100%;
   display: inline;
   float: left;
   padding: 50px 10px;
@@ -178,17 +147,13 @@ position: relative;
 }
 
 .skills{
-  max-width: 33%;
+  max-width: 100%;
   display: inline;
   float: left;
   padding: 50px 10px;
 }
 .divider {
-  height: 125px;
-  width: 1px;
-  background-color: white;
-  float: left;
-  margin: 50px 0 0 0;
+  display: none;
 }
 
 
@@ -221,4 +186,71 @@ position: relative;
 }
 .header-image{
   max-height: 1200px;
+}
+@media (min-width:900px) {
+  .page-section{
+    width: 50%;
+    line-height: 0;
+    position: relative;
+    padding:25px;
+  }
+  img{
+    height: inherit;
+    width: inherit;
+  }
+  #blog{
+
+    padding-right: 100px;
+    .splash-excerpt{
+      position: absolute;
+      top: 11em;
+      left: 0em;
+    }
+    .splash-title{
+      position: absolute;
+      top: 0em;
+      left: 0.5em;
+    }
+
+  }
+  #photo-site{
+    padding-left: 100px;
+    .splash-excerpt{
+      position: absolute;
+      top: 11em;
+      left: 0em;
+    }
+  }
+  #mobile{
+    padding-right: 100px;
+    padding-top: 20px;
+  }
+
+  #bot{
+    padding-left: 100px;
+    padding-top: 20px;
+
+  }
+  .about-me{
+    max-width: 33%;
+    padding-top: 10px;
+  }
+  .skills{
+    max-width: 33%;
+    padding-top: 10px;
+  }
+  .experience{
+    max-width: 33%;
+    padding-top: 10px;
+  }
+  .divider {
+    height: 125px;
+    width: 1px;
+    background-color: white;
+    float: left;
+    margin: 50px 0 0 0;
+  }
+  .about-me{
+    padding: 0;
+  }
 }
