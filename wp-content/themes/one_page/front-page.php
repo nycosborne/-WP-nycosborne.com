@@ -39,7 +39,7 @@ get_header();
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
 									$query->the_post();
-									?>	<a href="<?php esc_url(the_permalink); ?>">
+									?>	<a href="<?php esc_url(the_permalink(150)) ?>">
 										<div class="entry-content">
 											<div class="splash-img">
 												<?php one_page_post_thumbnail(); ?>
