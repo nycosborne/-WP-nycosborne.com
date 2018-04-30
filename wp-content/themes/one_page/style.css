@@ -1322,7 +1322,7 @@ div.menu-menu-1-container li:hover a {
 }
 
 .post-thumbnail img {
-	/* margin: 15px; */
+	width: 500px;
 }
 
 .page-section {

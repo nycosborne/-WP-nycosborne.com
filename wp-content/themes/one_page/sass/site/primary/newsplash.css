@@ -6,7 +6,6 @@
 
 }
 
-
 .landing-page{
   display: inline-block;
   max-width: 1200px;
@@ -23,9 +22,11 @@
   max-width: 900px;
 }
 
-.post-thumbnail img{
-  /* margin: 15px; */
+.post-thumbnail img {
+
+  width: 500px;
 }
+
 
 .page-section{
 /* padding-top: 25px; */

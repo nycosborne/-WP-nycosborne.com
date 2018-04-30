@@ -39,7 +39,7 @@ get_header();
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
 									$query->the_post();
-									?>	<a href="<?php esc_url(the_permalink(150)); ?>">
+									?>	<a href="<?php esc_url(the_permalink); ?>">
 										<div class="entry-content">
 											<div class="splash-img">
 												<?php one_page_post_thumbnail(); ?>
@@ -63,23 +63,29 @@ get_header();
 						wp_reset_postdata();
 						?>
 				</section>
+
 				<section id="photo-site" class="page-section">
 							<?php
-							$query = new WP_Query( 'pagename=tech-blog' );
+							$query = new WP_Query(array(
+								'post_type' => 'page',
+								'page_id' => 217,
+
+							));
 							// The Loop
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
 									$query->the_post();?>
-									<a href="<?php esc_url(the_permalink(150)) ?>">
+									<a href="http://photos.nycosborne.com/">
 									<div class="entry-content">
 										<div class="splash-img">
 											<?php one_page_post_thumbnail(); ?>
 										</div>
 										<div class="splash-title">
-											<?php the_title(); ?>
+											<p>Dan's Photos</p>
+											<!-- <?php the_title(); ?> -->
 										</div>
 										<div class="splash-excerpt">
-											<?php echo the_excerpt(); ?>
+											<!-- <?php echo the_excerpt(); ?> -->
 										</div>
 
 									</div>
@@ -93,6 +99,8 @@ get_header();
 						wp_reset_postdata();
 						?>
 				</section>
+
+
 				<section id="mobile" class="page-section">
 							<?php
 							// $query = new WP_Query( 'pagename=lifting' );
