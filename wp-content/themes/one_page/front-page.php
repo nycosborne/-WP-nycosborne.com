@@ -75,7 +75,7 @@ get_header();
 							if ( $query->have_posts() ) {
 								while ( $query->have_posts() ) {
 									$query->the_post();?>
-									<a href="http://photos.nycosborne.com/">
+									<a href="http://photo.nycosborne.com/">
 									<div class="entry-content">
 										<div class="splash-img">
 											<?php one_page_post_thumbnail(); ?>
