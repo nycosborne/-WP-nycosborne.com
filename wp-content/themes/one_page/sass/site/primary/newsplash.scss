@@ -42,10 +42,13 @@ position: relative;
 
 }
 .splash-img{
-
-
-
+   max-width: 500px;
+   margin: auto;
 }
+.splash-title{
+  // max-width: 500px;
+}
+
 .splash-excerpt{
   position: absolute;
   top: 8em;
@@ -58,6 +61,7 @@ position: relative;
   transition: 1.5s ease;
   transform: translate(-0%, -0%);
   -ms-transform: translate(-0%, -0%);
+  width: 500px;
 }
 .splash-title{
   position: absolute;
@@ -95,6 +99,19 @@ position: relative;
 
 }
 
+.splash-title{
+  position: absolute;
+  top: 1em;
+  left: 3em;
+  width: 80%;
+}
+
+.splash-excerpt{
+  position: absolute;
+  top: 11em;
+  left: 8em;
+  width: 50%;
+}
 
 
 #blog{
@@ -201,37 +218,50 @@ position: relative;
   .landing-page{
       margin: 0px;
   }
+
+  .splash-title{
+    position: absolute;
+    top: 0em;
+    left: 0.5em;
+  }
+
+  .splash-excerpt{
+    position: absolute;
+    top: 11em;
+    left: 0em;
+    width: auto;
+  }
+
   #blog{
 
     padding-right: 100px;
-    .splash-excerpt{
-      position: absolute;
-      top: 11em;
-      left: 0em;
-    }
-    .splash-title{
-      position: absolute;
-      top: 0em;
-      left: 0.5em;
-    }
+    padding-bottom: 10px;
 
   }
   #photo-site{
     padding-left: 100px;
-    .splash-excerpt{
-      position: absolute;
-      top: 11em;
-      left: 0em;
-    }
+    padding-bottom: 10px;
   }
   #mobile{
     padding-right: 100px;
-    padding-top: 20px;
+    padding-top: 10px;
+    .splash-excerpt{
+      position: absolute;
+      top: 5em;
+      left: 0em;
+      width: auto;
+    }
   }
 
   #bot{
     padding-left: 100px;
-    padding-top: 20px;
+    padding-top: 10px;
+    .splash-excerpt{
+      position: absolute;
+      top: 5em;
+      left: 0em;
+      width: auto;
+    }
 
   }
   .bio{
