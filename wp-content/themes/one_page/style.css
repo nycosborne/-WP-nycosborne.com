@@ -1087,6 +1087,7 @@ article {
 	z-index: 100;
 	top: 0;
 	left: 0;
+	box-shadow: 0 4px 9px black;
 }
 
 .header-image {
@@ -1364,7 +1365,7 @@ div.menu-menu-1-container li:hover a {
 }
 
 .page .entry-content:hover .splash-img {
-	box-shadow: 0 4px 9px black;
+	box-shadow: 0 4px 4px black;
 	background-color: black;
 	-webkit-filter: brightness(50%);
 	/* Safari 6.0 - 9.0 */

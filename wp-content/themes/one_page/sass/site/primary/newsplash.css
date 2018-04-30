@@ -6,6 +6,7 @@
 
 }
 
+
 .landing-page{
   display: inline-block;
   max-width: 1200px;
@@ -72,7 +73,7 @@ position: relative;
 .page{
   .entry-content:hover .splash-img{
 
-    box-shadow: 0 4px 9px black;
+    box-shadow: 0 4px 4px black;
     background-color: black;
     -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
     filter: brightness(50%);
