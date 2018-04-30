@@ -23,6 +23,8 @@ get_header();
 
 
 
+				<div class="featured-projects">
+
 
 				<section id="blog" class="page-section">
 							<?php
@@ -117,6 +119,7 @@ get_header();
 										<div class="splash-excerpt">
 											<?php echo the_excerpt(); ?>
 										</div>
+
 									</div>
 									</a><?php
 									break;
@@ -127,6 +130,7 @@ get_header();
 						wp_reset_postdata();
 						?>
 				</section>
+			</div> <!-- end of .featured-projects -->
 			</div> <!--end .landing-page -->
 
 			<div class="bio">

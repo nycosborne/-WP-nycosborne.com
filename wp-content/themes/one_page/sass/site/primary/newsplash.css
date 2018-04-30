@@ -8,7 +8,7 @@
 
 .landing-page{
   display: inline-block;
-  max-width: 1600px;
+  max-width: 1200px;
   padding-bottom: 75px;
   a{
     color: black;
@@ -17,11 +17,14 @@
    text-align: left;
   }
 }
+.featured-projects{
+  max-width: 900px;
+}
 
 .post-thumbnail img{
-    height: 300px;
+    /* height: 300px;
     width: 300px;
-    padding-bottom: 10px;
+    padding-bottom: 10px; */
 }
 
 .page-section{
@@ -29,6 +32,66 @@
 width: 100%;
 line-height: 0;
 position: relative;
+  .entry-content{
+    position: relative;
+    display: block;
+    line-height: normal;
+    background-color: gray;
+  }
+
+}
+.splash-img{
+  position: absolute;
+  top: 0em;
+  right: 0em;
+
+
+
+}
+.splash-excerpt{
+  position: absolute;
+  top: 8em;
+  right: 0em;
+  text-align: left;
+  display: inline-block;
+  color: #fff;
+  padding: 5px;
+  opacity: 0;
+}
+.splash-title{
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  text-align: left;
+  display: inline-block;
+  color: #fff;
+  font-size: 3em;
+  transition: .5s ease;
+  opacity: 0;
+  transform: translate(-0%, -0%);
+  -ms-transform: translate(-0%, -0%);
+
+}
+.page{
+  .entry-content:hover .splash-img{
+
+    box-shadow: 0 4px 9px black;
+    background-color: black;
+    -webkit-filter: brightness(50%); /* Safari 6.0 - 9.0 */
+    filter: brightness(50%);
+  }
+  .entry-content:hover .splash-title{
+    opacity: 1;
+
+  }
+  .entry-content:hover .splash-excerpt{
+    opacity: 1;
+
+  }
+
+
+
+
 }
 @media (min-width:900px) {
   .page-section{
@@ -56,9 +119,7 @@ position: relative;
   #bot{
     padding-left: 100px;
     padding-top: 20px;
-    .entry-content{
-      display: inline-block;
-    }
+
   }
 }
 
@@ -157,4 +218,7 @@ position: relative;
 
 .site-title{
   text-align: left;
+}
+.header-image{
+  max-height: 1200px;
 }
